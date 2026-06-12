@@ -124,13 +124,17 @@ footer p{/*Derechos de autor*/
     text-align: center;
     opacity: 75%;
 }
+                /*Perfiles Profesores*/
 .cont-prof{
-  display: flex;
-  gap: 20px;            /* Separa un perfil del otro */
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 20px;           /* Separa un perfil del otro */
+  align-items: center;
   width: 100%;
-  margin: 20px;
 }
 .perfprof{
+    align-items: center;
     padding: 25px;/*espacio entre el texto y el borde*/
     display: flex;
     background-color: #D1DBE6;
@@ -138,19 +142,50 @@ footer p{/*Derechos de autor*/
     width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
      box-sizing: border-box;
      margin: 20px;
-     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);;
+     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
+     transition: 0.3s;
 }
+.perfprof:hover{
+    transform: scale(1.06);
+}
+
 .fotopro {
    width: 150px;
   height: 150px;
   border-radius: 50%;
 }
+.infoprof{
+     display: flex;
+     flex-direction: column;
+     margin :10px;
+     flex-grow: 1; 
+}
+
 .infoprof h3{
    margin:10px;
 }
+.infoprof p{
+    margin-bottom: 25%;
+    padding: 10px;
+
+}
 .infoprof a{
     text-decoration: none;
+    margin-top: auto;
+    align-self: center; 
+    display: inline-block;
+    color: #b0c0d4;
+    transition: 0.3s;
+    padding: 7px;
+    background-color: #344557ad;
+    border-radius: 5px;
 }
+.infoprof a:hover{
+    transform: scale(1.03);
+    color: #7b8797;
+    background-color:#D1DBE6 ;
+}
+/* fin peril profesores*/
 /*
 PALETA DE COLORES:
 MÁS CLARO
