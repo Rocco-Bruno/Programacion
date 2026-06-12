@@ -3,17 +3,126 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #5B7AB5;/*Color de fondo de la página*/
+}
+h2{/*Subtítulos*/
+    color: #1F2732;/*Color de letra*/
+    line-height: 1.2;/*Tamaño*/
+    text-decoration: bold;/*Negrita*/
+}
+.navegador{
+    margin: 0;
+    padding: 10px;
+    background-color: grey
+}
+
+.navegador nav{
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navegador nav div{
+    margin: 0;
+    padding: 10px;
+    background-color: gray;
+    display: inline-block;
+    
+}
+
+.navegador nav ul{
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    background-color: grey;
+    display: inline-block;
+    list-style: none;
+}
 #objetivos div{
     display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .articulo{
     text-align: center;
-    background-color: #eb4848;
+    background-color: #A9BDD0;
     margin: auto;
     padding: 20px;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
+}
+.articulo h3{
+    color: #334659;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.articulo p{
+    color: #334659;
+    font-size: 20px;
+}
+
+/*HORARIOS*/
+#horarios{
+    text-align: center;
+}
+#horarios article{
+    height: 250px;
+    width: 250px;
+    background-color: #2E3C4C;
+    border: 5px solid #1F2732;
+}
+/*FOOTER*/
+footer{/*Footer en general*/
+    background-color: #2E3C4C;/*Color de fondo principal*/
+    color: #F5F7FA;/*Color de letra*/
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+footer div{/*Contenedor de título itlf e imágen*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 5rem 0rem 2rem;
+}
+footer div img{
+    border-radius: 50%;/*img redondeada del logo de itlf*/
+    color: #A9BDD0;
+    width: 75px;
+    height: 78px;
+    margin: 2rem 5rem 1rem 2rem;
+}
+footer a{
+    text-decoration: none;
+}
+i{
+    display: inline-block;
+    margin: auto auto;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #A9BDD0;
+    display: inline-block;
+    transition: 0.3s;
+}
+i:hover{
+    color: #7B9AB5;
+    transition: all 0.3s ease;/*Animación simple para que no sea tan brusco el cambio*/
+    transform: scale(1.1);/*Agranda el logo*/
+}
+footer p{/*Derechos de autor*/
+    position: static;
+    text-align: center;
+    opacity: 75%;
 }
 .cont-prof{
   display: flex;
