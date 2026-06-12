@@ -74,6 +74,11 @@ h2{/*Subtítulos*/
     width: 250px;
     background-color: #2E3C4C;
     border: 5px solid #1F2732;
+    padding: 25px;/*espacio entre el texto y el borde*/
+    display: column;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 20px;
 }
 /*FOOTER*/
 footer{/*Footer en general*/
@@ -125,28 +130,28 @@ footer p{/*Derechos de autor*/
     opacity: 75%;
 }
 .cont-prof{
-  display: flex;
-  gap: 20px;            /* Separa un perfil del otro */
-  width: 100%;
-  margin: 20px;
+    display: flex;
+    gap: 20px;            /* Separa un perfil del otro */
+    width: 100%;
+    margin: 20px;
 }
 .perfprof{
     padding: 25px;/*espacio entre el texto y el borde*/
     display: flex;
     background-color: #D1DBE6;
     border-radius: 15px;
-    width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
-     box-sizing: border-box;
-     margin: 20px;
-     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);;
+    width: 450px;/*Limitás el ancho para que no ocupe toda la pantalla*/
+    box-sizing: border-box;
+    margin: 20px;
+    box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
 }
 .fotopro {
-   width: 150px;
-  height: 150px;
-  border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 .infoprof h3{
-   margin:10px;
+    margin:10px;
 }
 .infoprof a{
     text-decoration: none;
