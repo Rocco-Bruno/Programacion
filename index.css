@@ -3,6 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.navegador{
+    margin: 0;
+    padding: 10px;
+    background-color: grey
+}
+
+.navegador nav{
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navegador nav div{
+    margin: 0;
+    padding: 10px;
+    background-color: gray;
+    display: inline-block;
+    
+}
+
+.navegador nav ul{
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    background-color: grey;
+    display: inline-block;
+    list-style: none;
+
+}
 /*
 PALETA DE COLORES:
 MÁS CLARO
