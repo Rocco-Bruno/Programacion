@@ -33,7 +33,7 @@
     background-color: grey;
     display: inline-block;
     list-style: none;
-
+}
 #objetivos div{
     display:flex;
     margin-top: 20px;
@@ -64,7 +64,8 @@ footer{/*Footer en general*/
 }
 footer nav{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 footer div{/*Contenedor de título itlf e imágen*/
     display: flex;
