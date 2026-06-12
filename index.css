@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #5B7AB5;/*Color de fondo de la página*/
+}
+h2{/*Subtítulos*/
+    color: #1F2732;/*Color de letra*/
+    line-height: 1.2;/*Tamaño*/
+    text-decoration: bold;/*Negrita*/
+}
 .navegador{
     margin: 0;
     padding: 10px;
@@ -56,6 +63,17 @@
 .articulo p{
     color: #334659;
     font-size: 20px;
+}
+
+/*HORARIOS*/
+#horarios{
+    text-align: center;
+}
+#horarios article{
+    height: 250px;
+    width: 250px;
+    background-color: #2E3C4C;
+    border: 5px solid #1F2732;
 }
 /*FOOTER*/
 footer{/*Footer en general*/
