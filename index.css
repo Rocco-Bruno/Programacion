@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+#objetivos div{
+    display:flex;
+}
+.articulo{
+    text-align: center;
+    background-color: #eb4848;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+}
