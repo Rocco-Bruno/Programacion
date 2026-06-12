@@ -5,15 +5,26 @@
 }
 #objetivos div{
     display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .articulo{
     text-align: center;
-    background-color: #eb4848;
+    background-color: #A9BDD0;
     margin: auto;
     padding: 20px;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
+}
+.articulo h3{
+    color: #334659;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.articulo p{
+    color: #334659;
+    font-size: 20px;
 }
 /*
 PALETA DE COLORES:
