@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #5B7AB5;/*Color de fondo de la página*/
+    background-color: #D1DBE6;/*Color de fondo de la página*/
 }
 h2{/*Subtítulos*/
     color: #1F2732;/*Color de letra*/
@@ -72,8 +72,9 @@ h2{/*Subtítulos*/
 #horarios article{
     height: 250px;
     width: 250px;
-    background-color: #2E3C4C;
-    border: 5px solid #1F2732;
+    background-color: #4F7091;
+    box-shadow: 5px #1F2732;
+    border: 5px solid #2E3C4C;
     padding: 25px;/*espacio entre el texto y el borde*/
     display: column;
     border-radius: 15px;
