@@ -47,22 +47,39 @@ h2{/*Subtítulos*/
     margin-bottom: 20px;
 }
 .articulo{
+    position: relative;
     text-align: center;
     background-color: #A9BDD0;
     margin: auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 400px;
     height: 250px;
 }
 .articulo h3{
+    position: relative;
     color: #334659;
     font-size: 35px;
     margin-bottom: 10px;
+    z-index: 20;
 }
 .articulo p{
+    position: relative;
     color: #334659;
     font-size: 20px;
+    z-index: 20;
+}
+.articulo i{
+    position: absolute;
+    color: #7B9AB5;
+    font-size: 200px;
+    left: 85px;
+    top: 30px;
+    z-index: 1;
+    opacity: 0;
+}
+.articulo:hover i{
+    opacity: 1;
 }
 
 /*HORARIOS*/
