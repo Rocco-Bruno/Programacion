@@ -294,7 +294,7 @@ footer p{/*Derechos de autor*/
 /* fin peril profesores*/
 
 #intro h1{
-    background-color: #A9BDD0;
+    background-color: #7B9AB5;
     width: 1000px;
     height: 90px;
     border-radius: 10px;
@@ -302,6 +302,26 @@ footer p{/*Derechos de autor*/
     font-size: 70px;
     text-align: center;
     margin: auto;
+    margin-bottom: 20px;
+}
+.intro-text{
+    padding: auto;
+    margin: auto;
+    background-color: #A9BDD0;
+    width: 590px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+#intro p,
+#intro a{
+    font-weight: bolder;
+    font-size: 35px;
+    color: #000000;
+}
+#intro a{
+    font-weight: lighter;
+    text-decoration: none;
 }
 
 
