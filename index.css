@@ -5,6 +5,10 @@
 }
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .subtitulos{/*Subtítulos*/
     text-align: left !important;
