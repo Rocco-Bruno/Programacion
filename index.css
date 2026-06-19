@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;/*para cuando el usuario toque un ancla y vaya a la misma página, vaya más suave*/
+}
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
     
@@ -77,7 +80,7 @@ body{
     transition: 0.2s;
 }
 .navegador nav div img:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 .navegador nav div span{
     font-size: 2rem;
@@ -172,10 +175,13 @@ body{
 /*CURSOS*/
 #cursos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    align-items: center;/*alineado al centro*/
+    justify-content: space-around;/*para que "encuentren" su propio espacio*/
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
 }
 #cursos article{
+    margin: 1rem 0rem 1rem 2rem;
     width: 40rem;
     height: 24rem;
     padding: 1rem;
@@ -183,7 +189,13 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
+    box-shadow: 0px 7px 7px 0px #334659;
+    transition: 0.3s;
     color: white;
+}
+#cursos article:hover{
+    box-shadow: 2px 10px 10px 2px #334659;
+    transition: all 0.3s ease-in-out;
 }
 #cursos article::before{
     content: "";
