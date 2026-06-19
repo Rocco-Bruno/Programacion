@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="index.css">
     <title>Programación - Instituto Técnico La Falda</title>
 </head>
-<body>
+<body id="inicio">
 
     <header class="navegador">
         <nav>
             <div>
-                <img src="imagenes/itl.png" alt="Logo ITLF"><!--Logo Colegio-->
-                <small>Instituto Técnico La Falda</small>
+                <a href="#inicio"><img src="imagenes/itl.png" alt="Logo ITLF"></a><!--Logo Colegio-->
                 <span>Programación</span>
             </div>
             <ul><!--Anclas a las secciones-->
@@ -37,15 +36,18 @@
         <!--INTRO-->
         <section id="intro"><!--Sección de bienvenida/introducción al usuario-->
             <h1>Especialidad Programación</h1>
-            <p>Formamos a los técnicos del futuro en el Instituto Técnico La Falda. 
+            <div class="intro-text">
+                <p>Formamos a los técnicos del futuro en el Instituto Técnico La Falda. 
                 Aprendé a programar, a resolver problemas y a construir soluciones 
                 reales.</p>
             <a href="#cursos">Ver Cursos</a>
+            </div>
+            
         </section>
 
         <!--QUIENES SOMOS-->
         <section id="quienessomos">
-            <h2>Quiénes Somos</h2>
+            <h2 class="subtitulos">Quiénes Somos</h2>
             <div>
                 <div>
                     <p>El Instituto Técnico La Falda es una institución educativa de 
@@ -67,7 +69,7 @@
         
         <!--OBJETIVOS Y VISION-->
         <section id="objetivos">
-            <h2>Misión, Visión y Objetivos</h2>
+            <h2 class="subtitulos">Misión, Visión y Objetivos</h2>
             <div>
                 <!--MISION-->
                 <article class="articulo">
@@ -104,7 +106,7 @@
 
         <!--ELEGIRNOS-->
         <section id="eleginos">
-            <h2>Porqué Elegirnos</h2>
+            <h2 class="subtitulos">Porqué Elegirnos</h2>
             <div>
                 <!--SALIDA LABORAL-->
                 <article>
@@ -134,7 +136,7 @@
 
         <!--CURSOS-->
         <section>
-            <h2>Cursos</h2>
+            <h2 class="subtitulos">Cursos</h2>
             <div>
                 <!--CUARTO-->
                 <article>
@@ -181,7 +183,7 @@
 
         <!--HORARIOS-->
         <section id="horarios">
-            <h2 class="subtitulos">Horarios</h2>
+            <h2 class="subtitulos">Horarios</h2> <br>
             <h3 class="descripciones">Descargá o visualiza el horario completo de cada año: </h3>
             <div>
                 <!--Horarios Cuarto-->
@@ -224,9 +226,10 @@
         </section>
 
         <!--PROFESORES-->
-        <div class="profesores">
-            <h2>Profesores</h2>
-            <div class="cont-prof">
+        <section id="profesores">
+            <div class="profesores">
+             <h2>Profesores</h2>
+             <div class="cont-prof">
                 <!--Juarez-->
                 <div class="perfprof">
                     <img class ="fotopro"src="imagenes/Juarez.png" alt=""><!--foto del profesor tipo carnet-->
@@ -318,8 +321,9 @@
                        <a href="mailto:aguilera.facundo@latecnicalf.com.ar" target="_blank" >Enviar correo</a>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
+        </section>
 
     </main>
     <footer>
@@ -334,7 +338,8 @@
             <nav>
                 <a href="https://www.instagram.com/latecnica_lf" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/latecnicalf/?locale=es_LA" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/03548426566" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/patricia-beatriz-larrubia-1300ba257/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </nav>
             <!--MAPA-->
             <div class="maps">

@@ -5,21 +5,23 @@
 }
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
 .subtitulos{/*Subtítulos*/
-    text-align: left !important;
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
     color: #1F2732;/*Color de letra*/
-    line-height: 1.5;/*Tamaño*/
-    font-weight: bold;
-    margin: auto auto auto 3rem;
+    font-size: 3rem;/*tamaño*/
+    margin: auto auto auto 3rem;/*márgenes*/
 }
 .descripciones{
-    text-align: left !important;
-    margin: auto auto auto 5rem;
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
+    color: #1F2732;/*Color de letra*/
+    font-size: 1.2rem;/*tamaño*/
+    font-weight: 550;/*grosor de la letra*/
+    margin: auto auto auto 5rem;/*márgenes*/
 }
 
 /*---------------------------------Nav---*/
@@ -27,8 +29,11 @@ body{
 .navegador{
     margin: 5px;
     padding: 10px;
-    background-color: #2E3C4C;
+
+    background-color: #334659;
+
     border-radius: 15px;
+
     z-index: 1000;
     position: sticky;
     top: 0;
@@ -38,56 +43,83 @@ body{
 .navegador nav{
     margin: 0;
     padding: 10px;
+
     background-color: #A9BDD0;
+
     display: flex;
     align-items: center;
+
     border-radius: 15px;
 }
 
 .navegador nav div{
     margin: 0;
     padding-right: 10px;
+
     background-color: #A9BDD0;
+
     display: inline-block;
     display: flex;
     align-items: center;
+
     border-radius: 5px;
 }
 .navegador nav div img{
     height: 75px;
     width: auto;
+
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 0;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    transition: 0.2s;
+}
+.navegador nav div img:hover{
+    transform: scale(1.2);
 }
 .navegador nav div span{
     font-size: 2rem;
+
     margin: 10px;
-}
-.navegador nav div small{
-    font-size: 1.5rem;
-    margin: 10px;
+
+    font-weight: bold;
+    color: #1F2732;
 }
 
 .navegador nav ul{
     margin-left: auto;
     margin-right: 0;
     padding: 28px 10px;
+
     background-color: #A9BDD0;
+
     display: inline-block;
     list-style: none;
+
     border-radius: 5px;
 }
 .navegador nav ul li{
     display: inline-block;
+
     margin: 10px;
+
     font-size: large;
+
+    transition: 0.2s;
+}
+.navegador nav ul li:hover{
+    transform: translateY(-2px);
 }
 .navegador nav ul li a{
     text-decoration: none;
-    color: black;
+    font-weight: 600;
+    color: #1F2732;
 }
+.navegador nav ul li a:hover{
+    color:#334659;
+}
+
 
 /*-------------------------------------------------*/
 
@@ -183,7 +215,7 @@ body{
     transition: 0.3s;
 }
 .fa-file:hover, .fa-download:hover{
-    color: #7B9AB5;
+    color: #7B9AB5;/*color*/
     transition: all 0.3s;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.1);/*Agranda el logo*/
 }
@@ -192,53 +224,65 @@ body{
     display: flex;
     flex-direction: row;/*alineado en fila*/
     align-items: center;/*alineado al centro*/
-    justify-content: space-around;
+    justify-content: space-around;/*para que "encuentren" su propio espacio*/
     gap: 5rem;/*espaciado entre los 3 "silos"*/
 }
 footer{/*Footer en general*/
     background-color: #2E3C4C;/*Color de fondo principal*/
     color: #F5F7FA;/*Color de letra*/
 }
-footer div{/*Contenedor de título itlf e imágen*/
-    margin: 2rem 5rem 0rem 2rem;
+footer nav{/*nav del footer (las redes)*/
+    display: flex;
+    flex-direction: column !important;/*una arriba de la otra*/
+    margin: 5rem 3rem 1.5rem 1rem;/*márgenes*/
 }
-footer div img{
-    color: #A9BDD0;
-    width: 120px;
-    height: 75px;
-    margin: 2rem 5rem 1rem 2rem;
+footer div{/*Contenedor de título itlf e imágen*/
+    margin: 2rem 5rem 0rem 2rem;/*márgenes*/
 }
 footer a{/*links del footer*/
-    text-decoration: none;
+    text-decoration: none;/*sin decoracion las anchor*/
+}
+.info-footer{/*info del footer (nombre, logo, descripcion)*/
+    margin: 0.2rem 0.5rem 8rem 3rem;/*márgenes*/
+}
+.info-footer img{/*logo del info-footer*/
+    width: 120px;/*ancho*/
+    height: 75px;/*altura*/
+    margin: 2rem 5rem 1rem 2rem;/*márgenes*/
+}
+.info-footer p{/*párrafos del info footer(nombre, y descripcion)*/
+    text-align: left !important;/*alineado a la izq, con prioridad*/
 }
 i{/*iconos*/
-    margin: auto auto;
-    font-size: 40px;
-    width: 70px;
-    height: 70px;
-    line-height: 50px;
-    border-radius: 50%;
-    color: #A9BDD0;
-    transition: 0.3s;
+    margin: auto auto;/*márgenes*/
+    font-size: 40px;/*tamaño*/
+    width: 70px;/*ancho*/
+    height: 70px;/*altura*/
+    line-height: 50px;/*separacion*/
+    border-radius: 50%;/*redondeados*/
+    color: #A9BDD0;/*color base de los iconos*/
+    transition: 0.15s;/*transicion*/
 }
 i:hover{/*hover de los iconos*/
-    color: #7B9AB5;
+    color: #7B9AB5;/*color mas oscuro*/
     transition: all 0.15s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.05);/*Agranda el logo*/
 }
-iframe{
-    /*medidas*/
-    width: 20rem;
-    height: 20rem;
-    /*colores*/
-    border-radius: 10px;
-    /*transicion*/
-    transition: 0.3s;
+iframe{/*maps*/
+    /*tamaño del mapa*/
+    width: 20rem;/*ancho*/
+    height: 20rem;/*altura*/
+    border-radius: 10px;/*bordes redondeados*/
+    transition: 0.3s;/*transicion*/
+}
+iframe:hover{/*hover del mapa*/
+    transition: all 0.3s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
+    transform: scale(1.05);/*Agranda el logo*/
 }
 footer p{/*Derechos de autor*/
-    position: static;
-    text-align: center;
-    opacity: 75%;
+    position: static;/*estatico*/
+    text-align: center;/*alineado al centro*/
+    opacity: 75%;/*un poquito más transparente*/
 }
                 /*Perfiles Profesores*/
 .profesores{
@@ -343,7 +387,7 @@ footer p{/*Derechos de autor*/
 /* fin peril profesores*/
 
 #intro h1{
-    background-color: #A9BDD0;
+    background-color: #7B9AB5;
     width: 1000px;
     height: 90px;
     border-radius: 10px;
@@ -351,6 +395,26 @@ footer p{/*Derechos de autor*/
     font-size: 70px;
     text-align: center;
     margin: auto;
+    margin-bottom: 20px;
+}
+.intro-text{
+    padding: auto;
+    margin: auto;
+    background-color: #A9BDD0;
+    width: 590px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+#intro p,
+#intro a{
+    font-weight: bolder;
+    font-size: 35px;
+    color: #000000;
+}
+#intro a{
+    font-weight: lighter;
+    text-decoration: none;
 }
 
 
