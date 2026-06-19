@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="index.css">
     <title>Programación - Instituto Técnico La Falda</title>
 </head>
-<body>
+<body id="inicio">
 
     <header class="navegador">
         <nav>
             <div>
-                <img src="imagenes/itl.png" alt="Logo ITLF"><!--Logo Colegio-->
-                <small>Instituto Técnico La Falda</small>
+                <a href="#inicio"><img src="imagenes/itl.png" alt="Logo ITLF"></a><!--Logo Colegio-->
                 <span>Programación</span>
             </div>
             <ul><!--Anclas a las secciones-->
@@ -37,10 +36,13 @@
         <!--INTRO-->
         <section id="intro"><!--Sección de bienvenida/introducción al usuario-->
             <h1>Especialidad Programación</h1>
-            <p>Formamos a los técnicos del futuro en el Instituto Técnico La Falda. 
+            <div class="intro-text">
+                <p>Formamos a los técnicos del futuro en el Instituto Técnico La Falda. 
                 Aprendé a programar, a resolver problemas y a construir soluciones 
                 reales.</p>
             <a href="#cursos">Ver Cursos</a>
+            </div>
+            
         </section>
 
         <!--QUIENES SOMOS-->
