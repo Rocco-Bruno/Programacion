@@ -5,42 +5,91 @@
 }
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
-h2{/*Subtítulos*/
+.subtitulos{/*Subtítulos*/
+    text-align: left !important;
     color: #1F2732;/*Color de letra*/
-    line-height: 1.2;/*Tamaño*/
-    text-decoration: bold;/*Negrita*/
+    line-height: 1.5;/*Tamaño*/
+    font-weight: bold;
+    margin: auto auto auto 3rem;
 }
+.descripciones{
+    text-align: left !important;
+    margin: auto auto auto 5rem;
+}
+
+/*---------------------------------Nav---*/
+
 .navegador{
-    margin: 0;
+    margin: 5px;
     padding: 10px;
-    background-color: grey
+    background-color: #2E3C4C;
+    border-radius: 15px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 99%;
 }
 
 .navegador nav{
     margin: 0;
     padding: 10px;
-    background-color: white;
+    background-color: #A9BDD0;
     display: flex;
     align-items: center;
+    border-radius: 15px;
 }
 
 .navegador nav div{
     margin: 0;
-    padding: 10px;
-    background-color: gray;
+    padding-right: 10px;
+    background-color: #A9BDD0;
     display: inline-block;
-    
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.navegador nav div img{
+    height: 75px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.navegador nav div span{
+    font-size: 2rem;
+    margin: 10px;
+}
+.navegador nav div small{
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 .navegador nav ul{
     margin-left: auto;
     margin-right: 0;
-    padding: 10px;
-    background-color: grey;
+    padding: 28px 10px;
+    background-color: #A9BDD0;
     display: inline-block;
     list-style: none;
+    border-radius: 5px;
 }
+.navegador nav ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: large;
+}
+.navegador nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*-------------------------------------------------*/
 
 #objetivos div{
     display: flex;
@@ -139,47 +188,52 @@ h2{/*Subtítulos*/
     transform: scale(1.1);/*Agranda el logo*/
 }
 /*FOOTER*/
+.contenedor-footer{/*contenedor principal del footer (contiene todo menos el copyright)*/
+    display: flex;
+    flex-direction: row;/*alineado en fila*/
+    align-items: center;/*alineado al centro*/
+    justify-content: space-around;
+    gap: 5rem;/*espaciado entre los 3 "silos"*/
+}
 footer{/*Footer en general*/
     background-color: #2E3C4C;/*Color de fondo principal*/
     color: #F5F7FA;/*Color de letra*/
 }
-footer nav{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
 footer div{/*Contenedor de título itlf e imágen*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 2rem 5rem 0rem 2rem;
 }
 footer div img{
-    border-radius: 50%;/*img redondeada del logo de itlf*/
     color: #A9BDD0;
-    width: 75px;
-    height: 78px;
+    width: 120px;
+    height: 75px;
     margin: 2rem 5rem 1rem 2rem;
 }
-footer a{
+footer a{/*links del footer*/
     text-decoration: none;
 }
-i{
+i{/*iconos*/
     margin: auto auto;
     font-size: 40px;
     width: 70px;
     height: 70px;
     line-height: 50px;
-    text-align: center;
     border-radius: 50%;
     color: #A9BDD0;
-    display: inline-block;
     transition: 0.3s;
 }
-i:hover{
+i:hover{/*hover de los iconos*/
     color: #7B9AB5;
-    transition: all 0.3s ease;/*Animación simple para que no sea tan brusco el cambio*/
-    transform: scale(1.1);/*Agranda el logo*/
+    transition: all 0.15s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
+    transform: scale(1.05);/*Agranda el logo*/
+}
+iframe{
+    /*medidas*/
+    width: 20rem;
+    height: 20rem;
+    /*colores*/
+    border-radius: 10px;
+    /*transicion*/
+    transition: 0.3s;
 }
 footer p{/*Derechos de autor*/
     position: static;
@@ -276,6 +330,20 @@ footer p{/*Derechos de autor*/
     background-color:#D1DBE6 ;
 }
 /* fin peril profesores*/
+
+#intro h1{
+    background-color: #A9BDD0;
+    width: 1000px;
+    height: 90px;
+    border-radius: 10px;
+    color: #334659;
+    font-size: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
 /*
 PALETA DE COLORES:
 MÁS CLARO
