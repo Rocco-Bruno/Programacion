@@ -6,21 +6,23 @@
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
     
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 .subtitulos{/*Subtítulos*/
-    text-align: left !important;
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
     color: #1F2732;/*Color de letra*/
-    line-height: 1.5;/*Tamaño*/
-    font-weight: bold;
-    margin: auto auto auto 3rem;
+    font-size: 3rem;/*tamaño*/
+    margin: auto auto auto 3rem;/*márgenes*/
 }
 .descripciones{
-    text-align: left !important;
-    margin: auto auto auto 5rem;
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
+    color: #1F2732;/*Color de letra*/
+    font-size: 1.2rem;/*tamaño*/
+    font-weight: 550;/*grosor de la letra*/
+    margin: auto auto auto 5rem;/*márgenes*/
 }
 
 /*---------------------------------Nav---*/
@@ -284,6 +286,17 @@ footer p{/*Derechos de autor*/
     opacity: 75%;/*un poquito más transparente*/
 }
                 /*Perfiles Profesores*/
+.profesores{
+    text-align: center;
+}
+.profesores h2{
+    text-align: center;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.profesores h2:hover{
+    transform: scale(1.09);
+}
 .cont-prof{
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
@@ -304,8 +317,8 @@ footer p{/*Derechos de autor*/
     margin: 20px;
     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
     transition: 0.3s;
-    min-height: 260px;
-    height: 260px;
+    min-height: 285px;
+    height: 285px;
 }
 
 .perfprof:hover{
