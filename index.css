@@ -155,10 +155,9 @@ footer div{/*Contenedor de título itlf e imágen*/
     margin: 2rem 5rem 0rem 2rem;
 }
 footer div img{
-    border-radius: 50%;/*img redondeada del logo de itlf*/
     color: #A9BDD0;
-    width: 75px;
-    height: 78px;
+    width: 100px;
+    height: 75px;
     margin: 2rem 5rem 1rem 2rem;
 }
 footer a{
