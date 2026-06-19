@@ -5,6 +5,10 @@
 }
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .subtitulos{/*Subtítulos*/
     text-align: left !important;
@@ -251,10 +255,6 @@ footer p{/*Derechos de autor*/
   margin: 20px;           /* Separa un perfil del otro */
   align-items: center;
   width: 100%;
-    display: flex;
-    gap: 20px;            /* Separa un perfil del otro */
-    width: 100%;
-    margin: 20px;
 }
 .perfprof{
     align-items: center;
@@ -263,15 +263,15 @@ footer p{/*Derechos de autor*/
     background-color: #D1DBE6;
     border-radius: 15px;
     width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
-     box-sizing: border-box;
-     margin: 20px;
-     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
-     transition: 0.3s;
     width: 450px;/*Limitás el ancho para que no ocupe toda la pantalla*/
     box-sizing: border-box;
     margin: 20px;
     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
+    transition: 0.3s;
+    min-height: 260px;
+    height: 260px;
 }
+
 .perfprof:hover{
     transform: scale(1.06);
 }
@@ -282,19 +282,41 @@ footer p{/*Derechos de autor*/
     border-radius: 50%;
 }
 .infoprof{
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
      margin :10px;
      flex-grow: 1; 
 }
+.infoprof ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
+.infoprof li{
+    background: #344557ad;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.90rem;
+    transition: 0.3s;
+}
+.infoprof li:hover{
+    transform: scale(1.05);
+}
 .infoprof h3{
     margin:10px;
 }
+.infoprof h4{
+    margin-left:10px;
+}
 .infoprof p{
-    margin-bottom: 25%;
-    padding: 10px;
-
+    margin: 5px 0;
+    padding: 0 10px;
 }
 .infoprof a{
     text-decoration: none;
@@ -308,7 +330,9 @@ footer p{/*Derechos de autor*/
     border-radius: 5px;
 }
 .infoprof a:hover{
-    transform: scale(1.03);
+    font-size: 1.0rem;
+    font-weight: bold;
+    transform: scale(1.05);
     color: #7b8797;
     background-color:#D1DBE6 ;
 }
