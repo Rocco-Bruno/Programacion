@@ -255,6 +255,20 @@ footer p{/*Derechos de autor*/
     background-color:#D1DBE6 ;
 }
 /* fin peril profesores*/
+
+#intro h1{
+    background-color: #A9BDD0;
+    width: 1000px;
+    height: 90px;
+    border-radius: 10px;
+    color: #334659;
+    font-size: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
 /*
 PALETA DE COLORES:
 MÁS CLARO
