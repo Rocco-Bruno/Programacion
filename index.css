@@ -169,7 +169,62 @@ body{
 .articulo:hover i{
     opacity: 1;
 }
-
+/*CURSOS*/
+#cursos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+#cursos article{
+    width: 40rem;
+    height: 24rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+#cursos article::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+#cursos article *{
+    position: relative;
+    z-index: 1;
+}
+#cuarto{
+    background-image: url("imagenes/prueba.webp");
+    background-size: cover;
+}
+#quinto{
+    background-image: url("imagenes/prueba.webp");
+    background-size: cover;
+}
+#sexto{
+    background-image: url("imagenes/prueba.webp");
+    background-size: cover;
+}
+#septimo{
+    background-image: url("imagenes/prueba.webp");
+    background-size: cover;
+}
+.año{
+    font-size: x-large;
+    font-weight: 1000;
+}
+.desc-año{
+    font-size: medium;
+    font-weight: 700;
+}
+.link-año{
+    align-items: flex-start;
+    text-decoration: none;
+    color: white;
+}
 /*HORARIOS*/
 #horarios{
     text-align: center;
