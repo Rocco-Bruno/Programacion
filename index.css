@@ -17,37 +17,68 @@ body{
     text-align: left !important;
     margin: auto auto auto 5rem;
 }
+/*---------------------------------Nav---*/
+
 .navegador{
     margin: 0;
     padding: 10px;
-    background-color: grey
+    background-color: #5B7AB5;
 }
 
 .navegador nav{
     margin: 0;
     padding: 10px;
-    background-color: white;
+    background-color: grey;
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    border: 5px solid #A9BDD0;;
 }
 
 .navegador nav div{
     margin: 0;
-    padding: 10px;
+    padding-right: 10px;
     background-color: gray;
     display: inline-block;
-    
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.navegador nav div img{
+    height: 75px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.navegador nav div span{
+    font-size: 2rem;
+    margin: 10px;
+}
+.navegador nav div small{
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 .navegador nav ul{
     margin-left: auto;
     margin-right: 0;
-    padding: 10px;
+    padding: 28px 10px;
     background-color: grey;
     display: inline-block;
     list-style: none;
+    border-radius: 5px;
 }
-
+.navegador nav ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: large;
+}
+.navegador nav ul li a{
+    text-decoration: none;
+    color: black;
+}
 #objetivos div{
     display: flex;
     margin-top: 20px;
