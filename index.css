@@ -195,6 +195,10 @@ footer{/*Footer en general*/
     background-color: #2E3C4C;/*Color de fondo principal*/
     color: #F5F7FA;/*Color de letra*/
 }
+footer nav{
+    display: flex;
+    flex-direction: column !important;
+}
 footer div{/*Contenedor de título itlf e imágen*/
     margin: 2rem 5rem 0rem 2rem;
 }
@@ -206,6 +210,9 @@ footer div img{
 }
 footer a{/*links del footer*/
     text-decoration: none;
+}
+.info-footer p{
+    text-align: left !important; 
 }
 i{/*iconos*/
     margin: auto auto;
