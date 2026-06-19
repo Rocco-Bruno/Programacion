@@ -5,6 +5,10 @@
 }
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .subtitulos{/*Subtítulos*/
     text-align: left !important;
@@ -17,28 +21,33 @@ body{
     text-align: left !important;
     margin: auto auto auto 5rem;
 }
+
 /*---------------------------------Nav---*/
 
 .navegador{
-    margin: 0;
+    margin: 5px;
     padding: 10px;
-    background-color: #5B7AB5;
+    background-color: #2E3C4C;
+    border-radius: 15px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 99%;
 }
 
 .navegador nav{
     margin: 0;
     padding: 10px;
-    background-color: grey;
+    background-color: #A9BDD0;
     display: flex;
     align-items: center;
-    border-radius: 5px;
-    border: 5px solid #A9BDD0;;
+    border-radius: 15px;
 }
 
 .navegador nav div{
     margin: 0;
     padding-right: 10px;
-    background-color: gray;
+    background-color: #A9BDD0;
     display: inline-block;
     display: flex;
     align-items: center;
@@ -65,7 +74,7 @@ body{
     margin-left: auto;
     margin-right: 0;
     padding: 28px 10px;
-    background-color: grey;
+    background-color: #A9BDD0;
     display: inline-block;
     list-style: none;
     border-radius: 5px;
@@ -79,6 +88,9 @@ body{
     text-decoration: none;
     color: black;
 }
+
+/*-------------------------------------------------*/
+
 #objetivos div{
     display: flex;
     margin-top: 20px;
@@ -171,56 +183,74 @@ body{
     transition: 0.3s;
 }
 .fa-file:hover, .fa-download:hover{
-    color: #7B9AB5;
+    color: #7B9AB5;/*color*/
     transition: all 0.3s;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.1);/*Agranda el logo*/
 }
 /*FOOTER*/
+.contenedor-footer{/*contenedor principal del footer (contiene todo menos el copyright)*/
+    display: flex;
+    flex-direction: row;/*alineado en fila*/
+    align-items: center;/*alineado al centro*/
+    justify-content: space-around;/*para que "encuentren" su propio espacio*/
+    gap: 5rem;/*espaciado entre los 3 "silos"*/
+}
 footer{/*Footer en general*/
     background-color: #2E3C4C;/*Color de fondo principal*/
     color: #F5F7FA;/*Color de letra*/
 }
-footer nav{
+footer nav{/*nav del footer (las redes)*/
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column !important;/*una arriba de la otra*/
+    margin: 5rem 3rem 1.5rem 1rem;/*márgenes*/
 }
 footer div{/*Contenedor de título itlf e imágen*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 2rem 5rem 0rem 2rem;
+    margin: 2rem 5rem 0rem 2rem;/*márgenes*/
 }
-footer div img{
-    color: #A9BDD0;
-    width: 120px;
-    height: 75px;
-    margin: 2rem 5rem 1rem 2rem;
+footer a{/*links del footer*/
+    text-decoration: none;/*sin decoracion las anchor*/
 }
-footer a{
-    text-decoration: none;
+.info-footer{/*info del footer (nombre, logo, descripcion)*/
+    margin: 0.2rem 0.5rem 8rem 3rem;/*márgenes*/
 }
-i{
-    margin: auto auto;
-    font-size: 40px;
-    width: 70px;
-    height: 70px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50%;
-    color: #A9BDD0;
-    display: inline-block;
-    transition: 0.3s;
+.info-footer img{/*logo del info-footer*/
+    width: 120px;/*ancho*/
+    height: 75px;/*altura*/
+    margin: 2rem 5rem 1rem 2rem;/*márgenes*/
 }
-i:hover{
-    color: #7B9AB5;
-    transition: all 0.3s ease;/*Animación simple para que no sea tan brusco el cambio*/
-    transform: scale(1.1);/*Agranda el logo*/
+.info-footer p{/*párrafos del info footer(nombre, y descripcion)*/
+    text-align: left !important;/*alineado a la izq, con prioridad*/
+}
+i{/*iconos*/
+    margin: auto auto;/*márgenes*/
+    font-size: 40px;/*tamaño*/
+    width: 70px;/*ancho*/
+    height: 70px;/*altura*/
+    line-height: 50px;/*separacion*/
+    border-radius: 50%;/*redondeados*/
+    color: #A9BDD0;/*color base de los iconos*/
+    transition: 0.15s;/*transicion*/
+}
+i:hover{/*hover de los iconos*/
+    color: #7B9AB5;/*color mas oscuro*/
+    transition: all 0.15s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
+    transform: scale(1.05);/*Agranda el logo*/
+}
+iframe{/*maps*/
+    /*tamaño del mapa*/
+    width: 20rem;/*ancho*/
+    height: 20rem;/*altura*/
+    border-radius: 10px;/*bordes redondeados*/
+    transition: 0.3s;/*transicion*/
+}
+iframe:hover{/*hover del mapa*/
+    transition: all 0.3s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
+    transform: scale(1.05);/*Agranda el logo*/
 }
 footer p{/*Derechos de autor*/
-    position: static;
-    text-align: center;
-    opacity: 75%;
+    position: static;/*estatico*/
+    text-align: center;/*alineado al centro*/
+    opacity: 75%;/*un poquito más transparente*/
 }
                 /*Perfiles Profesores*/
 .cont-prof{
@@ -230,10 +260,6 @@ footer p{/*Derechos de autor*/
   margin: 20px;           /* Separa un perfil del otro */
   align-items: center;
   width: 100%;
-    display: flex;
-    gap: 20px;            /* Separa un perfil del otro */
-    width: 100%;
-    margin: 20px;
 }
 .perfprof{
     align-items: center;
@@ -242,15 +268,15 @@ footer p{/*Derechos de autor*/
     background-color: #D1DBE6;
     border-radius: 15px;
     width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
-     box-sizing: border-box;
-     margin: 20px;
-     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
-     transition: 0.3s;
     width: 450px;/*Limitás el ancho para que no ocupe toda la pantalla*/
     box-sizing: border-box;
     margin: 20px;
     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
+    transition: 0.3s;
+    min-height: 260px;
+    height: 260px;
 }
+
 .perfprof:hover{
     transform: scale(1.06);
 }
@@ -261,19 +287,41 @@ footer p{/*Derechos de autor*/
     border-radius: 50%;
 }
 .infoprof{
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
      margin :10px;
      flex-grow: 1; 
 }
+.infoprof ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
+.infoprof li{
+    background: #344557ad;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.90rem;
+    transition: 0.3s;
+}
+.infoprof li:hover{
+    transform: scale(1.05);
+}
 .infoprof h3{
     margin:10px;
 }
+.infoprof h4{
+    margin-left:10px;
+}
 .infoprof p{
-    margin-bottom: 25%;
-    padding: 10px;
-
+    margin: 5px 0;
+    padding: 0 10px;
 }
 .infoprof a{
     text-decoration: none;
@@ -287,7 +335,9 @@ footer p{/*Derechos de autor*/
     border-radius: 5px;
 }
 .infoprof a:hover{
-    transform: scale(1.03);
+    font-size: 1.0rem;
+    font-weight: bold;
+    transform: scale(1.05);
     color: #7b8797;
     background-color:#D1DBE6 ;
 }
