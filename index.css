@@ -17,36 +17,75 @@ body{
     text-align: left !important;
     margin: auto auto auto 5rem;
 }
+
+/*---------------------------------Nav---*/
+
 .navegador{
-    margin: 0;
+    margin: 5px;
     padding: 10px;
-    background-color: grey
+    background-color: #2E3C4C;
+    border-radius: 15px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 99%;
 }
 
 .navegador nav{
     margin: 0;
     padding: 10px;
-    background-color: white;
+    background-color: #A9BDD0;
     display: flex;
     align-items: center;
+    border-radius: 15px;
 }
 
 .navegador nav div{
     margin: 0;
-    padding: 10px;
-    background-color: gray;
+    padding-right: 10px;
+    background-color: #A9BDD0;
     display: inline-block;
-    
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.navegador nav div img{
+    height: 75px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.navegador nav div span{
+    font-size: 2rem;
+    margin: 10px;
+}
+.navegador nav div small{
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 .navegador nav ul{
     margin-left: auto;
     margin-right: 0;
-    padding: 10px;
-    background-color: grey;
+    padding: 28px 10px;
+    background-color: #A9BDD0;
     display: inline-block;
     list-style: none;
+    border-radius: 5px;
 }
+.navegador nav ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: large;
+}
+.navegador nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*-------------------------------------------------*/
 
 #objetivos div{
     display: flex;
@@ -267,6 +306,20 @@ footer p{/*Derechos de autor*/
     background-color:#D1DBE6 ;
 }
 /* fin peril profesores*/
+
+#intro h1{
+    background-color: #A9BDD0;
+    width: 1000px;
+    height: 90px;
+    border-radius: 10px;
+    color: #334659;
+    font-size: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
 /*
 PALETA DE COLORES:
 MÁS CLARO
