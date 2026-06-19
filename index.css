@@ -213,7 +213,7 @@ body{
     transition: 0.3s;
 }
 .fa-file:hover, .fa-download:hover{
-    color: #7B9AB5;
+    color: #7B9AB5;/*color*/
     transition: all 0.3s;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.1);/*Agranda el logo*/
 }
@@ -222,53 +222,65 @@ body{
     display: flex;
     flex-direction: row;/*alineado en fila*/
     align-items: center;/*alineado al centro*/
-    justify-content: space-around;
+    justify-content: space-around;/*para que "encuentren" su propio espacio*/
     gap: 5rem;/*espaciado entre los 3 "silos"*/
 }
 footer{/*Footer en general*/
     background-color: #2E3C4C;/*Color de fondo principal*/
     color: #F5F7FA;/*Color de letra*/
 }
-footer div{/*Contenedor de título itlf e imágen*/
-    margin: 2rem 5rem 0rem 2rem;
+footer nav{/*nav del footer (las redes)*/
+    display: flex;
+    flex-direction: column !important;/*una arriba de la otra*/
+    margin: 5rem 3rem 1.5rem 1rem;/*márgenes*/
 }
-footer div img{
-    color: #A9BDD0;
-    width: 120px;
-    height: 75px;
-    margin: 2rem 5rem 1rem 2rem;
+footer div{/*Contenedor de título itlf e imágen*/
+    margin: 2rem 5rem 0rem 2rem;/*márgenes*/
 }
 footer a{/*links del footer*/
-    text-decoration: none;
+    text-decoration: none;/*sin decoracion las anchor*/
+}
+.info-footer{/*info del footer (nombre, logo, descripcion)*/
+    margin: 0.2rem 0.5rem 8rem 3rem;/*márgenes*/
+}
+.info-footer img{/*logo del info-footer*/
+    width: 120px;/*ancho*/
+    height: 75px;/*altura*/
+    margin: 2rem 5rem 1rem 2rem;/*márgenes*/
+}
+.info-footer p{/*párrafos del info footer(nombre, y descripcion)*/
+    text-align: left !important;/*alineado a la izq, con prioridad*/
 }
 i{/*iconos*/
-    margin: auto auto;
-    font-size: 40px;
-    width: 70px;
-    height: 70px;
-    line-height: 50px;
-    border-radius: 50%;
-    color: #A9BDD0;
-    transition: 0.3s;
+    margin: auto auto;/*márgenes*/
+    font-size: 40px;/*tamaño*/
+    width: 70px;/*ancho*/
+    height: 70px;/*altura*/
+    line-height: 50px;/*separacion*/
+    border-radius: 50%;/*redondeados*/
+    color: #A9BDD0;/*color base de los iconos*/
+    transition: 0.15s;/*transicion*/
 }
 i:hover{/*hover de los iconos*/
-    color: #7B9AB5;
+    color: #7B9AB5;/*color mas oscuro*/
     transition: all 0.15s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.05);/*Agranda el logo*/
 }
-iframe{
-    /*medidas*/
-    width: 20rem;
-    height: 20rem;
-    /*colores*/
-    border-radius: 10px;
-    /*transicion*/
-    transition: 0.3s;
+iframe{/*maps*/
+    /*tamaño del mapa*/
+    width: 20rem;/*ancho*/
+    height: 20rem;/*altura*/
+    border-radius: 10px;/*bordes redondeados*/
+    transition: 0.3s;/*transicion*/
+}
+iframe:hover{/*hover del mapa*/
+    transition: all 0.3s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
+    transform: scale(1.05);/*Agranda el logo*/
 }
 footer p{/*Derechos de autor*/
-    position: static;
-    text-align: center;
-    opacity: 75%;
+    position: static;/*estatico*/
+    text-align: center;/*alineado al centro*/
+    opacity: 75%;/*un poquito más transparente*/
 }
                 /*Perfiles Profesores*/
 .cont-prof{
@@ -362,7 +374,7 @@ footer p{/*Derechos de autor*/
 /* fin peril profesores*/
 
 #intro h1{
-    background-color: #A9BDD0;
+    background-color: #7B9AB5;
     width: 1000px;
     height: 90px;
     border-radius: 10px;
@@ -370,6 +382,26 @@ footer p{/*Derechos de autor*/
     font-size: 70px;
     text-align: center;
     margin: auto;
+    margin-bottom: 20px;
+}
+.intro-text{
+    padding: auto;
+    margin: auto;
+    background-color: #A9BDD0;
+    width: 590px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+#intro p,
+#intro a{
+    font-weight: bolder;
+    font-size: 35px;
+    color: #000000;
+}
+#intro a{
+    font-weight: lighter;
+    text-decoration: none;
 }
 
 
