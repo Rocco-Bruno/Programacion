@@ -6,42 +6,79 @@
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
 }
-h2{/*Subtítulos*/
+.subtitulos{/*Subtítulos*/
+    text-align: left !important;
     color: #1F2732;/*Color de letra*/
-    line-height: 1.2;/*Tamaño*/
-    text-decoration: bold;/*Negrita*/
+    line-height: 1.5;/*Tamaño*/
+    font-weight: bold;
+    margin: auto auto auto 3rem;
 }
+.descripciones{
+    text-align: left !important;
+    margin: auto auto auto 5rem;
+}
+/*---------------------------------Nav---*/
+
 .navegador{
     margin: 0;
     padding: 10px;
-    background-color: grey
+    background-color: #5B7AB5;
 }
 
 .navegador nav{
     margin: 0;
     padding: 10px;
-    background-color: white;
+    background-color: grey;
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    border: 5px solid #A9BDD0;;
 }
 
 .navegador nav div{
     margin: 0;
-    padding: 10px;
+    padding-right: 10px;
     background-color: gray;
     display: inline-block;
-    
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.navegador nav div img{
+    height: 75px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.navegador nav div span{
+    font-size: 2rem;
+    margin: 10px;
+}
+.navegador nav div small{
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 .navegador nav ul{
     margin-left: auto;
     margin-right: 0;
-    padding: 10px;
+    padding: 28px 10px;
     background-color: grey;
     display: inline-block;
     list-style: none;
+    border-radius: 5px;
 }
-
+.navegador nav ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: large;
+}
+.navegador nav ul li a{
+    text-decoration: none;
+    color: black;
+}
 #objetivos div{
     display: flex;
     margin-top: 20px;
@@ -156,7 +193,7 @@ footer div{/*Contenedor de título itlf e imágen*/
 }
 footer div img{
     color: #A9BDD0;
-    width: 100px;
+    width: 120px;
     height: 75px;
     margin: 2rem 5rem 1rem 2rem;
 }
