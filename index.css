@@ -6,10 +6,16 @@
 body{
     background-color: #D1DBE6;/*Color de fondo de la página*/
 }
-h2{/*Subtítulos*/
+.subtitulos{/*Subtítulos*/
+    text-align: left !important;
     color: #1F2732;/*Color de letra*/
-    line-height: 1.2;/*Tamaño*/
-    text-decoration: bold;/*Negrita*/
+    line-height: 1.5;/*Tamaño*/
+    font-weight: bold;
+    margin: auto auto auto 3rem;
+}
+.descripciones{
+    text-align: left !important;
+    margin: auto auto auto 5rem;
 }
 .navegador{
     margin: 0;
@@ -156,7 +162,7 @@ footer div{/*Contenedor de título itlf e imágen*/
 }
 footer div img{
     color: #A9BDD0;
-    width: 100px;
+    width: 120px;
     height: 75px;
     margin: 2rem 5rem 1rem 2rem;
 }
