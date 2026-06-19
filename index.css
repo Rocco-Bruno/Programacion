@@ -241,6 +241,17 @@ footer p{/*Derechos de autor*/
     opacity: 75%;
 }
                 /*Perfiles Profesores*/
+.profesores{
+    text-align: center;
+}
+.profesores h2{
+    text-align: center;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.profesores h2:hover{
+    transform: scale(1.09);
+}
 .cont-prof{
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
@@ -261,8 +272,8 @@ footer p{/*Derechos de autor*/
     margin: 20px;
     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
     transition: 0.3s;
-    min-height: 260px;
-    height: 260px;
+    min-height: 285px;
+    height: 285px;
 }
 
 .perfprof:hover{
