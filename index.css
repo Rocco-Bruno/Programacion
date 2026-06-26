@@ -466,11 +466,11 @@ footer p{/*Derechos de autor*/
     margin-bottom: 20px;
 }
 .intro-text{
-    padding: auto;
+    padding: 1rem;
     margin: auto;
     background-color: #A9BDD0;
-    width: 590px;
-    height: 200px;
+    width: 650px;
+    height: 250px;
     border-radius: 10px;
     text-align: center;
 }
@@ -481,8 +481,12 @@ footer p{/*Derechos de autor*/
     color: #000000;
 }
 #intro a{
-    font-weight: lighter;
+    font-weight: bolder;
     text-decoration: none;
+    color: #1F2732;
+}
+#intro a:hover{
+    color: #334659;
 }
 
 
