@@ -206,73 +206,83 @@ body{
      box-shadow: 0px 7px 7px 0px #3346593b;
 }
 /*CURSOS*/
-#cursos{
-    display: grid;
+#cursos{/*contenedor de cursos*/
+    display: grid;/*uno al lado del otro*/
     align-items: center;/*alineado al centro*/
     justify-content: space-around;/*para que "encuentren" su propio espacio*/
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr) !important;/*para que sean dos cursos ariba y dos abajo*/
+    gap: 0.5rem;/*espacio entre cada curso*/
 }
-#cursos article{
-    margin: 1rem 0rem 1rem 2rem;
-    width: 40rem;
-    height: 24rem;
-    padding: 1rem;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
+#cursos article{/*contenido de cada curso*/
+    display: flex;
+    flex-direction: column !important;/*una arriba de la otra*/
+    margin: 1rem 0rem 1rem 1rem;/*margen con respecto a los otros cursos*/
+    width: 40rem;/*ancho de cada curso*/
+    height: 24rem;/*altura ""  "" "" */
+    padding: 1rem;/*espaciado interno*/
+    border-radius: 10px;/*borde redondeado*/
+    background-size: cover;/*la imagen ocupa todo el contenedor*/
+    background-position: center;/*imagen centrada*/
     position: relative;
-    box-shadow: 0px 7px 7px 0px #334659;
-    transition: 0.3s;
-    color: white;
+    box-shadow: 0px 7px 7px 0px #334659;/*sombra del contenedor*/
+    transition: 0.3s;/*transicion de la animacion*/
+    color: white;/*color de letra blanco*/
 }
-#cursos article:hover{
-    box-shadow: 2px 10px 10px 2px #334659;
-    transition: all 0.3s ease-in-out;
+#cursos article:hover{/*hover de los cursos*/
+    box-shadow: 2px 10px 10px 2px #334659;/*sombra mas gruesa*/
+    transition: all 0.3s ease-in-out;/*transicion limpia*/
 }
-#cursos article::before{
-    content: "";
+#cursos article::before{/*"filtro"*/
+    content: "";/*contenido vacio*/
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);/*"filtro" más opaco de cada curso*/
     border-radius: 10px;
 }
 #cursos article *{
     position: relative;
     z-index: 1;
 }
-#cuarto{
-    background-image: url("imagenes/prueba.webp");
-    background-size: cover;
+#cuarto{/*cuarto año*/
+    background-image: url("imagenes/prueba.webp");/*img de fondo*/
+    background-size: cover;/*ocupa todo el contenedor*/
 }
-#quinto{
-    background-image: url("imagenes/prueba.webp");
-    background-size: cover;
+#quinto{/*quinto año*/
+    background-image: url("imagenes/prueba.webp");/*img de fondo*/
+    background-size: cover;/*ocupa todo el contenedor*/
 }
-#sexto{
-    background-image: url("imagenes/prueba.webp");
-    background-size: cover;
+#sexto{/*sexto año*/
+    background-image: url("imagenes/prueba.webp");/*img de fondo*/
+    background-size: cover;/*ocupa todo el contenedor*/
 }
-#septimo{
-    background-image: url("imagenes/prueba.webp");
-    background-size: cover;
+#septimo{/*septimo año*/
+    background-image: url("imagenes/prueba.webp");/*img de fondo*/
+    background-size: cover;/*ocupa todo el contenedor*/
 }
-.año{
-    font-size: x-large;
-    font-weight: 1000;
+.año{/*año de los cursos*/
+    font-size: x-large;/*tamaño de letra*/
+    font-weight: 1000;/*negrita*/
 }
-.desc-año{
-    font-size: medium;
-    font-weight: 700;
+.desc-año{/*descripcion de los cursos*/
+    margin-top: auto;/*al fondo del contenedor*/
+    margin-bottom: 1rem;/*separado 1 rem de abajo*/
+    font-size: medium;/*tamaño medio de letra*/
+    font-weight: 700;/*grosor de la letra*/
 }
 .link-año{
-    align-items: flex-start;
-    text-decoration: none;
-    color: white;
+    text-decoration: none;/*sin decoracion*/
+    color: white;/*color de letra*/
+    transition: 0.5s;/*transicion*/
+}
+.link-año:hover{
+    text-decoration: underline;/*subrayado del anchor*/
+    text-decoration-color: rgb(207, 207, 207);/*color del subrayado mas oscuro*/
+    color: rgb(207, 207, 207);/*color mas oscuro*/
+    transition: all 0.5s ease;/*transicion limpia*/
 }
 /*HORARIOS*/
 #horarios{
-    text-align: center;
+    text-align: center;/*alineado al centro*/
 }
 #horarios article{
     /*posiciones*/
@@ -296,7 +306,7 @@ body{
 #horarios article:hover{
     background-color: #4F7091;
     box-shadow: 2.5px 2.5px 5px #1F2732;
-    border: 4.5px solid #2E3C4C;
+    border: 3px solid #2E3C4C;
     transition: all 0.3s;/*Animación simple para que no sea tan brusco el cambio*/
 }
 .fa-file, .fa-download{
@@ -498,11 +508,11 @@ footer p{/*Derechos de autor*/
     margin-bottom: 20px;
 }
 .intro-text{
-    padding: auto;
+    padding: 1rem;
     margin: auto;
     background-color: #A9BDD0;
-    width: 590px;
-    height: 200px;
+    width: 650px;
+    height: 250px;
     border-radius: 10px;
     text-align: center;
 }
@@ -513,25 +523,29 @@ footer p{/*Derechos de autor*/
     color: #000000;
 }
 #intro a{
-    font-weight: lighter;
+    font-weight: bolder;
     text-decoration: none;
+    color: #1F2732;
+}
+#intro a:hover{
+    color: #334659;
 }
 
 
 
 /*
 PALETA DE COLORES:
-MÁS CLARO
-50: #F5F7FA
-100: #EAEEF4
-200: #D1DBE6
-300: #A9BDD0
-400: #7B9AB5
-500: #5B7AB5
-600: #4F7091
-700: #3A516A
-800: #334659
-900: #2E3C4C
-950: #1F2732
-MÁS OSCURO
+| Nivel | Color     | Uso recomendado                             |
+| ----: | :-------- | :------------------------------------------ |
+|    50 | `#F5F7FA` | Fondo principal de la página                |
+|   100 | `#EAEEF4` | Fondos de tarjetas o secciones              |
+|   200 | `#D1DBE6` | Bordes suaves, separadores                  |
+|   300 | `#A9BDD0` | Bordes más visibles, estados deshabilitados |
+|   400 | `#7B9AB5` | Texto secundario, iconos                    |
+|   500 | `#5B7AB5` | **Color principal (Primary)**, botones      |
+|   600 | `#4F7091` | Hover de botones, enlaces activos           |
+|   700 | `#3A516A` | Elementos destacados, encabezados           |
+|   800 | `#334659` | Texto principal sobre fondos claros         |
+|   900 | `#2E3C4C` | Encabezados importantes                     |
+|   950 | `#1F2732` | Fondo oscuro, footer, modo oscuro           |
 */
