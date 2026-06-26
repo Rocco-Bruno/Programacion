@@ -499,17 +499,17 @@ footer p{/*Derechos de autor*/
 
 /*
 PALETA DE COLORES:
-MÁS CLARO
-50: #F5F7FA
-100: #EAEEF4
-200: #D1DBE6
-300: #A9BDD0
-400: #7B9AB5
-500: #5B7AB5
-600: #4F7091
-700: #3A516A
-800: #334659
-900: #2E3C4C
-950: #1F2732
-MÁS OSCURO
+| Nivel | Color     | Uso recomendado                             |
+| ----: | :-------- | :------------------------------------------ |
+|    50 | `#F5F7FA` | Fondo principal de la página                |
+|   100 | `#EAEEF4` | Fondos de tarjetas o secciones              |
+|   200 | `#D1DBE6` | Bordes suaves, separadores                  |
+|   300 | `#A9BDD0` | Bordes más visibles, estados deshabilitados |
+|   400 | `#7B9AB5` | Texto secundario, iconos                    |
+|   500 | `#5B7AB5` | **Color principal (Primary)**, botones      |
+|   600 | `#4F7091` | Hover de botones, enlaces activos           |
+|   700 | `#3A516A` | Elementos destacados, encabezados           |
+|   800 | `#334659` | Texto principal sobre fondos claros         |
+|   900 | `#2E3C4C` | Encabezados importantes                     |
+|   950 | `#1F2732` | Fondo oscuro, footer, modo oscuro           |
 */
