@@ -171,6 +171,39 @@ body{
 .articulo:hover i{
     opacity: 1;
 }
+/*Quines somos*/
+.quienessomos{
+    display: flex;
+    padding: 50px;
+    text-align: center;
+    background-color: #93c2ec28;
+    margin:50px;
+    border-radius: 20px;
+     transition: 0.5s;
+     box-shadow: 0px 2px 7px 0px #3346593b;
+}
+.quienessomos:hover{
+     transform: scale(1.03);
+    background-color: #a6c5e29c;
+    box-shadow: 0px 6px 7px 2px #33465965;
+}
+.Q-texto{
+    margin:25px;
+    font-size: 20px;
+    padding: 20px;
+    width: 500px;/* Limitás el ancho para que no ocupe toda la pantalla */
+    color: #00000085;
+    background-color: #7b9ab533;
+    border-radius: 10px;
+     box-shadow: 0px 2px 7px 0px #3346593b;
+     transition: 0.3s;
+}
+.Q-texto:hover{
+    transform: scale(1.05);
+    color: #000000bd;
+    background-color: #7b9ab59d;
+     box-shadow: 0px 7px 7px 0px #3346593b;
+}
 /*CURSOS*/
 #cursos{/*contenedor de cursos*/
     display: grid;/*uno al lado del otro*/
@@ -389,7 +422,6 @@ footer p{/*Derechos de autor*/
     background-color: #D1DBE6;
     border-radius: 15px;
     width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
-    width: 450px;/*Limitás el ancho para que no ocupe toda la pantalla*/
     box-sizing: border-box;
     margin: 20px;
     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
@@ -469,18 +501,18 @@ footer p{/*Derechos de autor*/
     width: 1000px;
     height: 90px;
     border-radius: 10px;
-    color: #334659;
+    color: #d9dee2;
     font-size: 70px;
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
 }
 .intro-text{
-    padding: auto;
+    padding: 1rem;
     margin: auto;
     background-color: #A9BDD0;
-    width: 590px;
-    height: 200px;
+    width: 650px;
+    height: 250px;
     border-radius: 10px;
     text-align: center;
 }
@@ -491,8 +523,12 @@ footer p{/*Derechos de autor*/
     color: #000000;
 }
 #intro a{
-    font-weight: lighter;
+    font-weight: bolder;
     text-decoration: none;
+    color: #1F2732;
+}
+#intro a:hover{
+    color: #334659;
 }
 
 
