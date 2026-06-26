@@ -207,10 +207,11 @@ body{
     display: flex;
     padding: 50px;
     text-align: center;
-    background-color: #93c2ec28;
+    background-color: #93c2ec4b;
     margin:50px;
+    margin-top: 20px;
     border-radius: 20px;
-     transition: 0.5s;
+     transition: 0.55s;
      box-shadow: 0px 2px 7px 0px #3346593b;
 }
 .quienessomos:hover{
@@ -218,7 +219,9 @@ body{
     background-color: #a6c5e29c;
     box-shadow: 0px 6px 7px 2px #33465965;
 }
+
 .Q-texto{
+     border: 1px solid #9cb3cce0;
     margin:25px;
     font-size: 23px;
     padding: 20px;
@@ -226,14 +229,22 @@ body{
     color: #00000085;
     background-color: #7b9ab533;
     border-radius: 10px;
-     box-shadow: 0px 2px 7px 0px #3346593b;
-     transition: 0.3s;
+    box-shadow: 0px 2px 7px 0px #3346593b;
+    transition: 0.3s;
 }
 .Q-texto:hover{
+    border: 1px solid #728292;
     transform: scale(1.05);
     color: #000000bd;
     background-color: #7b9ab59d;
-     box-shadow: 0px 7px 7px 0px #3346593b;
+    box-shadow: 0px 7px 7px 0px #3346593b;
+}
+.Q-texto strong{
+    color: #000000c5;
+    transition: 0.2s;
+}
+.Q-texto strong:hover{
+    color: #000000e7;
 }
 /*CURSOS*/
 #cursos{/*contenedor de cursos*/
@@ -300,6 +311,7 @@ body{
     font-weight: 700;/*grosor de la letra*/
 }
 .link-año{
+    margin-left: 1rem;
     text-decoration: none;/*sin decoracion*/
     color: #7B9AB5;/*color de letra*/
     transition: 0.5s;/*transicion*/
@@ -388,8 +400,8 @@ footer a{/*links del footer*/
     margin: 0.2rem 0.5rem 8rem 3rem;/*márgenes*/
 }
 .info-footer img{/*logo del info-footer*/
-    width: 120px;/*ancho*/
-    height: 75px;/*altura*/
+    width: 155px;/*ancho*/
+    height: 85px;/*altura*/
     margin: 2rem 5rem 1rem 2rem;/*márgenes*/
 }
 .info-footer p{/*párrafos del info footer(nombre, y descripcion)*/
@@ -447,6 +459,7 @@ footer p{/*Derechos de autor*/
   width: 100%;
 }
 .perfprof{
+    border: 1px solid #9cb3cc;
     align-items: center;
     padding: 25px;/*espacio entre el texto y el borde*/
     display: flex;
@@ -466,6 +479,7 @@ footer p{/*Derechos de autor*/
 }
 
 .fotopro {
+    border: 3px solid #9cb3cc;
     width: 150px;
     height: 150px;
     border-radius: 50%;
