@@ -269,6 +269,7 @@ body{
     font-weight: 700;/*grosor de la letra*/
 }
 .link-año{
+    margin-left: 1rem;
     text-decoration: none;/*sin decoracion*/
     color: #7B9AB5;/*color de letra*/
     transition: 0.5s;/*transicion*/
@@ -357,8 +358,8 @@ footer a{/*links del footer*/
     margin: 0.2rem 0.5rem 8rem 3rem;/*márgenes*/
 }
 .info-footer img{/*logo del info-footer*/
-    width: 120px;/*ancho*/
-    height: 75px;/*altura*/
+    width: 155px;/*ancho*/
+    height: 85px;/*altura*/
     margin: 2rem 5rem 1rem 2rem;/*márgenes*/
 }
 .info-footer p{/*párrafos del info footer(nombre, y descripcion)*/
