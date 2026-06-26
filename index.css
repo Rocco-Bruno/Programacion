@@ -1,3 +1,24 @@
+:root {
+  /* Fondos */
+  --fondo-principal: #F5F7FA;   /* Fondo principal de la página */
+  --fondo-tarjeta: #EAEEF4;     /* Fondos de tarjetas o secciones */
+  --fondo-oscuro: #1F2732;      /* Fondo oscuro, footer, modo oscuro */
+
+  /* Bordes */
+  --borde-suave: #D1DBE6;       /* Bordes suaves, separadores */
+  --borde-visible: #A9BDD0;     /* Bordes más visibles, estados deshabilitados */
+
+  /* Textos e Iconos */
+  --texto-principal: #334659;   /* Texto principal sobre fondos claros */
+  --texto-secundario: #7B9AB5;  /* Texto secundario, iconos */
+  --texto-titulo: #2E3C4C;      /* Encabezados importantes */
+  --texto-destacado: #3A516A;   /* Elementos destacados, encabezados */
+
+  /* Botones y Acciones */
+  --color-botones: #5B7AB5;     /* Color principal (Primary), botones */
+  --color-hover: #4F7091;       /* Hover de botones, enlaces activos */
+}/*varaibles de color, se usan con var(nombrecolor) en donde quieras que este*/
+
 *{
     margin: 0;
     padding: 0;
@@ -15,13 +36,13 @@ body{
 }
 .subtitulos{/*Subtítulos*/
     text-align: left !important;/*alineado a la izquierda con prioridad*/
-    color: #334659;/*Color de letra*/
+    color: var(--texto-principal);/*Color de letra*/
     font-size: 3rem;/*tamaño*/
     margin: auto auto auto 3rem;/*márgenes*/
 }
 .descripciones{
     text-align: left !important;/*alineado a la izquierda con prioridad*/
-    color: #334659;/*Color de letra*/
+    color: var(--texto-principal);/*Color de letra*/
     font-size: 1.2rem;/*tamaño*/
     font-weight: 700;/*grosor de la letra*/
     margin: auto auto auto 5rem;/*márgenes*/
@@ -33,7 +54,7 @@ body{
     margin: 5px;
     padding: 10px;
 
-    background-color: #334659;
+    background-color: var(--texto-principal);
 
     border-radius: 15px;
 
@@ -47,7 +68,7 @@ body{
     margin: 0;
     padding: 10px;
 
-    background-color: #A9BDD0;
+    background-color: var(--borde-visible);
 
     display: flex;
     align-items: center;
@@ -59,7 +80,7 @@ body{
     margin: 0;
     padding-right: 10px;
 
-    background-color: #A9BDD0;
+    background-color: var(--borde-visible);
 
     display: inline-block;
     display: flex;
@@ -95,7 +116,7 @@ body{
     margin-right: 0;
     padding: 28px 10px;
 
-    background-color: #A9BDD0;
+    background-color: var(--borde-visible);
 
     display: inline-block;
     list-style: none;
@@ -120,7 +141,7 @@ body{
     color: #1F2732;
 }
 .navegador nav ul li a:hover{
-    color:#334659;
+    color:var(--texto-principal);
 }
 
 
@@ -139,7 +160,7 @@ body{
 .articulo{
     position: relative;
     text-align: center;
-    background-color: #A9BDD0;
+    background-color: var(--borde-visible);
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -148,20 +169,20 @@ body{
 }
 .articulo h3{
     position: relative;
-    color: #334659;
+    color: var(--texto-principal);
     font-size: 35px;
     margin-bottom: 10px;
     z-index: 20;
 }
 .articulo p{
     position: relative;
-    color: #334659;
+    color: var(--texto-principal);
     font-size: 20px;
     z-index: 20;
 }
 .articulo i{
     position: absolute;
-    color: #7B9AB5;
+    color: var(--texto-secundario);
     font-size: 200px;
     left: 85px;
     top: 30px;
@@ -196,7 +217,7 @@ body{
     padding: 20px;
     width: 500px;/* Limitás el ancho para que no ocupe toda la pantalla */
     color: #00000085;
-    background-color: #7b9ab533;
+    background-color: #8ca2b465;
     border-radius: 10px;
     box-shadow: 0px 2px 7px 0px #3346593b;
     transition: 0.3s;
@@ -205,7 +226,7 @@ body{
     border: 1px solid #728292;
     transform: scale(1.05);
     color: #000000bd;
-    background-color: #7b9ab59d;
+    background-color:#7b9ab59f; ;
     box-shadow: 0px 7px 7px 0px #3346593b;
 }
 .Q-texto strong{
@@ -234,12 +255,12 @@ body{
     background-size: cover;/*la imagen ocupa todo el contenedor*/
     background-position: center;/*imagen centrada*/
     position: relative;
-    box-shadow: 0px 7px 7px 0px #334659;/*sombra del contenedor*/
+    box-shadow: 0px 7px 7px 0px var(--texto-principal);/*sombra del contenedor*/
     transition: 0.3s;/*transicion de la animacion*/
     color: white;/*color de letra blanco*/
 }
 #cursos article:hover{/*hover de los cursos*/
-    box-shadow: 2px 10px 10px 2px #334659;/*sombra mas gruesa*/
+    box-shadow: 2px 10px 10px 2px var(--texto-principal);/*sombra mas gruesa*/
     transition: all 0.3s ease-in-out;/*transicion limpia*/
 }
 #cursos article::before{/*"filtro"*/
@@ -281,7 +302,7 @@ body{
 }
 .link-año{
     text-decoration: none;/*sin decoracion*/
-    color: #7B9AB5;/*color de letra*/
+    color: var(--texto-secundario);/*color de letra*/
     transition: 0.5s;/*transicion*/
 }
 .link-año:hover{
@@ -293,7 +314,7 @@ body{
 /*HORARIOS*/
 #horarios{
     text-align: center;/*alineado al centro*/
-    color: #334659;
+    color: var(--texto-principal);
 }
 #horarios article{
     /*posiciones*/
@@ -332,7 +353,7 @@ body{
     line-height: 50px;
     border-radius: 50%;
     /*colores*/
-    color: #7B9AB5 !important;
+    color: var(--texto-secundario) !important;
     /*transicion*/
     transition: 0.3s;
 }
@@ -351,7 +372,7 @@ body{
 }
 footer{/*Footer en general*/
     background-color: #1F2732;/*Color de fondo principal*/
-    color: #7B9AB5;/*Color de letra*/
+    color: var(--texto-secundario);/*Color de letra*/
 }
 footer nav{/*nav del footer (las redes)*/
     display: flex;
@@ -382,7 +403,7 @@ i{/*iconos*/
     height: 70px;/*altura*/
     line-height: 50px;/*separacion*/
     border-radius: 50%;/*redondeados*/
-    color: #7B9AB5;/*color base de los iconos*/
+    color: var(--texto-secundario);/*color base de los iconos*/
     transition: 0.15s;/*transicion*/
 }
 i:hover{/*hover de los iconos*/
@@ -510,7 +531,7 @@ footer p{/*Derechos de autor*/
 /* fin peril profesores*/
 
 #intro h1{
-    background-color: #7B9AB5;
+    background-color: var(--texto-secundario);
     width: 1000px;
     height: 90px;
     border-radius: 10px;
@@ -523,7 +544,7 @@ footer p{/*Derechos de autor*/
 .intro-text{
     padding: 1rem;
     margin: auto;
-    background-color: #A9BDD0;
+    background-color: var(--borde-visible);
     width: 650px;
     height: 250px;
     border-radius: 10px;
@@ -541,7 +562,7 @@ footer p{/*Derechos de autor*/
     color: #1F2732;
 }
 #intro a:hover{
-    color: #334659;
+    color: var(--texto-principal);
 }
 
 
