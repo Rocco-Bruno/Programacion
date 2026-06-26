@@ -172,6 +172,37 @@ body{
 .articulo:hover i{
     opacity: 1;
 }
+
+/*-------------------Por que elegirnos--------*/
+
+.razones{
+    padding: 1rem 4rem;
+}
+
+.razones h3{
+    display: inline-block;
+
+    background-color: #2E3C4C;
+    padding: 0 10px;
+
+    border-radius: 10px;
+
+    font-size: 2rem;
+    color: #A9BDD0;
+}
+
+.razones p{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    width: 25rem;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1F2732;
+}
+
 /*CURSOS*/
 #cursos{/*contenedor de cursos*/
     display: grid;/*uno al lado del otro*/
