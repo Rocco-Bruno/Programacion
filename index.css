@@ -15,15 +15,15 @@ body{
 }
 .subtitulos{/*Subtítulos*/
     text-align: left !important;/*alineado a la izquierda con prioridad*/
-    color: #1F2732;/*Color de letra*/
+    color: #334659;/*Color de letra*/
     font-size: 3rem;/*tamaño*/
     margin: auto auto auto 3rem;/*márgenes*/
 }
 .descripciones{
     text-align: left !important;/*alineado a la izquierda con prioridad*/
-    color: #1F2732;/*Color de letra*/
+    color: #334659;/*Color de letra*/
     font-size: 1.2rem;/*tamaño*/
-    font-weight: 550;/*grosor de la letra*/
+    font-weight: 700;/*grosor de la letra*/
     margin: auto auto auto 5rem;/*márgenes*/
 }
 
