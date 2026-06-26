@@ -163,7 +163,7 @@ body{
     position: absolute;
     color: #7B9AB5;
     font-size: 200px;
-    left: 85px;
+    left: 90px;
     top: 30px;
     z-index: 1;
     opacity: 0;
@@ -407,7 +407,7 @@ footer a{/*links del footer*/
 .info-footer p{/*párrafos del info footer(nombre, y descripcion)*/
     text-align: left !important;/*alineado a la izq, con prioridad*/
 }
-i{/*iconos*/
+.fab{/*iconos*/
     margin: auto auto;/*márgenes*/
     font-size: 40px;/*tamaño*/
     width: 70px;/*ancho*/
@@ -417,7 +417,7 @@ i{/*iconos*/
     color: #7B9AB5;/*color base de los iconos*/
     transition: 0.15s;/*transicion*/
 }
-i:hover{/*hover de los iconos*/
+.fab:hover{/*hover de los iconos*/
     color: #5B7AB5;/*color mas oscuro*/
     transition: all 0.15s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.05);/*Agranda el logo*/
