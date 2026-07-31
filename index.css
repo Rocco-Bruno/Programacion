@@ -196,10 +196,44 @@ body{
 /*-------------------Por que elegirnos--------*/
 
 .razones{
-    padding: 1rem 4rem;
+    background-color: #D1DBE6;
+
+    display: inline-block;
+
+    border-radius: 8px;
+
+    padding: 1rem;
+
+    margin: 1rem;
+    margin-left: 9rem;
+}
+
+.razones_derecha{
+    background-color: #D1DBE6;
+
+    display: inline-block;
+
+    border-radius: 8px;
+
+    padding: 1rem;
+
+    margin: 1rem;
+    margin-left: 40rem;
 }
 
 .razones h3{
+    display: inline-block;
+
+    background-color: #2E3C4C;
+    padding: 0 10px;
+
+    border-radius: 10px;
+
+    font-size: 2rem;
+    color: #A9BDD0;
+}
+
+.razones_derecha h3{
     display: inline-block;
 
     background-color: #2E3C4C;
@@ -216,7 +250,19 @@ body{
     margin-left: 2rem;
     margin-right: 2rem;
 
-    width: 25rem;
+    width: 28rem;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1F2732;
+}
+
+.razones_derecha p{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    width: 28rem;
 
     font-size: 1.5rem;
     font-weight: 400;
@@ -570,6 +616,7 @@ footer p{/*Derechos de autor*/
     background-color:#D1DBE6 ;
 }
 /* fin peril profesores*/
+
 #intro h1{
     background-color: var(--texto-secundario);
     width: 1000px;
@@ -582,27 +629,29 @@ footer p{/*Derechos de autor*/
     margin-bottom: 20px;
 }
 .intro-text{
-    padding: 1rem;
-    margin: auto;
-    background-color: var(--borde-visible);
-    width: 650px;
-    height: 250px;
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
+    color: var(--texto-principal);/*Color de letra*/
+    font-size: 3rem;/*tamaño*/
+    margin: 1rem auto 1rem 1rem;
+    background-image: url("imagenes/prueba.webp");/*img de fondo*/
+    background-size: cover;/*ocupa todo el contenedor*/
     border-radius: 10px;
-    text-align: center;
 }
-#intro p,
-#intro a{
-    font-weight: bolder;
-    font-size: 35px;
-    color: #000000;
+.intro-link-año{
+    font-size: 1.2rem;/*tamaño letra*/
+    font-weight: 1;
+    margin: 0rem auto 1rem 3rem;
+    text-decoration: none;/*sin decoracion*/
+    color: var(--texto-principal);/*color de letra*/
+    transition: 0.5s;/*transicion*/
 }
-#intro a{
-    font-weight: bolder;
-    text-decoration: none;
-    color: #1F2732;
-}
-#intro a:hover{
-    color: var(--texto-principal);
+.intro-link-año:hover{
+    font-size: 1.4rem;/*tamaño letra*/
+    font-weight: 2;
+    text-decoration: underline;/*subrayado del anchor*/
+    text-decoration-color: var(--texto-principal);/*color del subrayado mas oscuro*/
+    color: var(--texto-principal);/*color mas oscuro*/
+    transition: all 0.5s ease;/*transicion limpia*/
 }
 
 
