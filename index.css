@@ -166,6 +166,7 @@ body{
     border-radius: 10px;
     width: 400px;
     height: 250px;
+    box-shadow: 0 8px 12px rgba(25, 25, 60, 0.25);
 }
 .articulo h3{
     position: relative;
@@ -206,6 +207,8 @@ body{
 
     margin: 1rem;
     margin-left: 9rem;
+
+    box-shadow: 8px 8px 10px rgba(20, 20, 50, 0.25);
 }
 
 .razones_derecha{
@@ -219,6 +222,8 @@ body{
 
     margin: 1rem;
     margin-left: 40rem;
+
+    box-shadow: 8px 8px 10px rgba(20, 20, 50, 0.25);
 }
 
 .razones h3{
