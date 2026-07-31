@@ -461,7 +461,11 @@ footer p{/*Derechos de autor*/
 }
                 /*Perfiles Profesores*/
 .profesores{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
 }
 .profesores h2{
     text-align: center;
@@ -472,12 +476,13 @@ footer p{/*Derechos de autor*/
     transform: scale(1.09);
 }
 .cont-prof{
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
-  margin: 20px;           /* Separa un perfil del otro */
-  align-items: center;
-  width: 100%;
+  margin: 20px auto;
+  align-items: stretch;
+  justify-content: center;
+  width: min(100%, 980px);
 }
 .perfprof{
     border: 1px solid #9cb3cc;
@@ -486,9 +491,10 @@ footer p{/*Derechos de autor*/
     display: flex;
     background-color: #D1DBE6;
     border-radius: 15px;
-    width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
+    max-width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
+    width: 100%;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 0 auto;
     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
     transition: 0.3s;
     min-height: 285px;
@@ -509,7 +515,7 @@ footer p{/*Derechos de autor*/
     display: flex;
     flex-direction: column;
     height: 100%;
-     margin :10px;
+     margin :5px;
      flex-grow: 1; 
 }
 .infoprof ul{
