@@ -196,10 +196,44 @@ body{
 /*-------------------Por que elegirnos--------*/
 
 .razones{
-    padding: 1rem 4rem;
+    background-color: #D1DBE6;
+
+    display: inline-block;
+
+    border-radius: 8px;
+
+    padding: 1rem;
+
+    margin: 1rem;
+    margin-left: 9rem;
+}
+
+.razones_derecha{
+    background-color: #D1DBE6;
+
+    display: inline-block;
+
+    border-radius: 8px;
+
+    padding: 1rem;
+
+    margin: 1rem;
+    margin-left: 40rem;
 }
 
 .razones h3{
+    display: inline-block;
+
+    background-color: #2E3C4C;
+    padding: 0 10px;
+
+    border-radius: 10px;
+
+    font-size: 2rem;
+    color: #A9BDD0;
+}
+
+.razones_derecha h3{
     display: inline-block;
 
     background-color: #2E3C4C;
@@ -216,7 +250,19 @@ body{
     margin-left: 2rem;
     margin-right: 2rem;
 
-    width: 25rem;
+    width: 28rem;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1F2732;
+}
+
+.razones_derecha p{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    width: 28rem;
 
     font-size: 1.5rem;
     font-weight: 400;
