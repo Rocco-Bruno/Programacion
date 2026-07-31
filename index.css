@@ -322,7 +322,7 @@ body{
     background-size: cover;/*ocupa todo el contenedor*/
 }
 .año{/*año de los cursos*/
-    font-size: x-large;/*tamaño de letra*/
+    font-size: xx-large;/*tamaño de letra*/
     font-weight: 1000;/*negrita*/
 }
 .desc-año{/*descripcion de los cursos*/
@@ -392,7 +392,7 @@ body{
 .fa-file:hover, .fa-download:hover{
     color: #5B7AB5 !important;/*color*/
     transition: all 0.3s;/*Animación simple para que no sea tan brusco el cambio*/
-    transform: scale(1.1);/*Agranda el logo*/
+    transform: scale(1.01);/*Agranda el logo*/
 }
 /*FOOTER*/
 .contenedor-footer{/*contenedor principal del footer (contiene todo menos el copyright)*/
@@ -452,7 +452,7 @@ iframe{/*maps*/
 }
 iframe:hover{/*hover del mapa*/
     transition: all 0.3s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
-    transform: scale(1.05);/*Agranda el logo*/
+    transform: scale(1.01);/*Agranda el logo*/
 }
 footer p{/*Derechos de autor*/
     position: static;/*estatico*/
