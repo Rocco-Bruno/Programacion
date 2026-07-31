@@ -507,7 +507,11 @@ footer p{/*Derechos de autor*/
 }
                 /*Perfiles Profesores*/
 .profesores{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
 }
 .profesores h2{
     text-align: center;
@@ -518,12 +522,13 @@ footer p{/*Derechos de autor*/
     transform: scale(1.09);
 }
 .cont-prof{
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
-  margin: 20px;           /* Separa un perfil del otro */
-  align-items: center;
-  width: 100%;
+  margin: 20px auto;
+  align-items: stretch;
+  justify-content: center;
+  width: min(100%, 980px);
 }
 .perfprof{
     border: 1px solid #9cb3cc;
@@ -532,9 +537,10 @@ footer p{/*Derechos de autor*/
     display: flex;
     background-color: #D1DBE6;
     border-radius: 15px;
-    width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
+    max-width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
+    width: 100%;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 0 auto;
     box-shadow: 0 0px 15px rgba(27, 27, 27, 0.384);
     transition: 0.3s;
     min-height: 285px;
@@ -555,7 +561,7 @@ footer p{/*Derechos de autor*/
     display: flex;
     flex-direction: column;
     height: 100%;
-     margin :10px;
+     margin :5px;
      flex-grow: 1; 
 }
 .infoprof ul{
@@ -607,40 +613,44 @@ footer p{/*Derechos de autor*/
     background-color:#D1DBE6 ;
 }
 /* fin peril profesores*/
-
-#intro h1{
-    background-color: var(--texto-secundario);
-    width: 1000px;
-    height: 90px;
-    border-radius: 10px;
-    color: #d9dee2;
-    font-size: 70px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
+/*INTRO*/
+.intro-titulo{
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
+    color: var(--texto-principal);/*Color de letra*/
+    font-size: 6.5rem;/*tamaño*/
+    margin: auto auto auto 3rem;/*márgenes*/
+}
+.intro-desc{
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
+    color: var(--texto-principal);/*Color de letra*/
+    font-size: 2.5rem;/*tamaño*/
+    font-weight: 700;/*grosor de la letra*/
+    margin: auto auto auto 5rem;/*márgenes*/
 }
 .intro-text{
-    padding: 1rem;
-    margin: auto;
-    background-color: var(--borde-visible);
-    width: 650px;
-    height: 250px;
+    text-align: left !important;/*alineado a la izquierda con prioridad*/
+    color: var(--texto-principal);/*Color de letra*/
+    font-size: 3rem;/*tamaño*/
+    margin: 1rem auto 1rem 1rem;
+    background-image: url("imagenes/prueba.webp");/*img de fondo*/
+    background-size: cover;/*ocupa todo el contenedor*/
     border-radius: 10px;
-    text-align: center;
 }
-#intro p,
-#intro a{
-    font-weight: bolder;
-    font-size: 35px;
-    color: #000000;
+.intro-link-año{
+    font-size: 1.2rem;/*tamaño letra*/
+    font-weight: 1;
+    margin: 0rem auto 1rem 3rem;
+    text-decoration: none;/*sin decoracion*/
+    color: var(--texto-principal);/*color de letra*/
+    transition: 0.5s;/*transicion*/
 }
-#intro a{
-    font-weight: bolder;
-    text-decoration: none;
-    color: #1F2732;
-}
-#intro a:hover{
-    color: var(--texto-principal);
+.intro-link-año:hover{
+    font-size: 1.4rem;/*tamaño letra*/
+    font-weight: 2;
+    text-decoration: underline;/*subrayado del anchor*/
+    text-decoration-color: var(--texto-principal);/*color del subrayado mas oscuro*/
+    color: var(--texto-principal);/*color mas oscuro*/
+    transition: all 0.5s ease;/*transicion limpia*/
 }
 
 
