@@ -465,7 +465,7 @@ footer p{/*Derechos de autor*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 .profesores h2{
     text-align: center;
@@ -480,6 +480,7 @@ footer p{/*Derechos de autor*/
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
   margin: 20px auto;
+
   align-items: stretch;
   justify-content: center;
   width: min(100%, 980px);
@@ -510,6 +511,8 @@ footer p{/*Derechos de autor*/
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 .infoprof{
     display: flex;
@@ -567,7 +570,6 @@ footer p{/*Derechos de autor*/
     background-color:#D1DBE6 ;
 }
 /* fin peril profesores*/
-
 #intro h1{
     background-color: var(--texto-secundario);
     width: 1000px;
