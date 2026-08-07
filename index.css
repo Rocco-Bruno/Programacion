@@ -148,7 +148,14 @@ a:hover{
 .navegador nav ul li{
     color:var(--texto-principal);
 }
-
+.navegador a{
+    color: #EAEEF4;
+    text-decoration: none;
+}
+.navegador a:hover{
+    color: #D1DBE6;
+    text-decoration: none;
+}
 
 /*-------------------------------------------------*/
 
