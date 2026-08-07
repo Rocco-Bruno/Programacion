@@ -199,7 +199,16 @@ a:hover{
 
 /*-------------------Por que elegirnos--------*/
 
-.razones{
+.razones1{
+    display: flex;
+    justify-content: center;
+}
+.razones2{
+    display: flex;
+    justify-content: center;
+}
+
+.razon{
     background-color: #D1DBE6;
 
     display: inline-block;
@@ -209,48 +218,31 @@ a:hover{
     padding: 1rem;
 
     margin: 1rem;
-    margin-left: 9rem;
 
     box-shadow: 8px 8px 10px rgba(20, 20, 50, 0.25);
+
+    transition: 0.2s;
 }
 
-.razones_derecha{
-    background-color: #D1DBE6;
-
-    display: inline-block;
-
-    border-radius: 8px;
-
-    padding: 1rem;
-
-    margin: 1rem;
-    margin-left: 40rem;
-
-    box-shadow: 8px 8px 10px rgba(20, 20, 50, 0.25);
+.razon:hover{
+    transform: scale(1.02);
 }
 
-.razones h3{
+.razon h3{
     display: inline-block;
-
-    background-color: #2E3C4C;
+    
     padding: 0 10px;
 
     border-radius: 10px;
 
     font-size: 2rem;
-    color: #A9BDD0;
+    color: #2E3C4C;
+
+    transition: 0.2s;
 }
 
-.razones_derecha h3{
-    display: inline-block;
-
-    background-color: #2E3C4C;
-    padding: 0 10px;
-
-    border-radius: 10px;
-
-    font-size: 2rem;
-    color: #A9BDD0;
+.razon h3:hover{
+    transform: translateX(4px);
 }
 
 .razones p{
