@@ -572,11 +572,19 @@ footer p{/*Derechos de autor*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 #intro div{
+    border-top: solid #1F2732;
+    border-bottom: solid #1F2732;
     margin: 3rem;
     min-height: 40vh;
     padding: 5rem 8%;
+    transition: all 0.5s;
+}
+#intro div:hover{
+    border-top: solid #4F7091;
+    border-bottom: solid #4F7091;
 }
 #intro h1{
     font-size: 6.5vh;
@@ -593,8 +601,15 @@ footer p{/*Derechos de autor*/
     text-decoration-color: #4F7091;
 }
 #intro img{
+    border-left: solid 0.5rem #1F2732;
     width: 500px;
     margin-right: 3rem;
+    border-radius: 0% 15% 15% 0%;
+    transition: all ease 0.5s;
+}
+#intro img:hover{
+    border-left: solid 0.5rem #4F7091;
+    border-radius: 0% 12% 12% 0%;
 }
 
 
