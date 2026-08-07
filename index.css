@@ -57,11 +57,11 @@ a:hover{
 
 .navegador{
     margin: 5px;
-    padding: 10px;
+    padding: 2px;
 
     background-color: var(--texto-principal);
 
-    border-radius: 15px;
+    border-radius: 16px;
 
     z-index: 1000;
     position: sticky;
@@ -78,7 +78,7 @@ a:hover{
     display: flex;
     align-items: center;
 
-    border-radius: 15px;
+    border-radius: 14px;
 }
 
 .navegador nav div{
