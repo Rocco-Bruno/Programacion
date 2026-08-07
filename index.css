@@ -149,11 +149,7 @@ a:hover{
     color:var(--texto-principal);
 }
 .navegador a{
-    color: #EAEEF4;
-    text-decoration: none;
-}
-.navegador a:hover{
-    color: #D1DBE6;
+    color: #1F2732;
     text-decoration: none;
 }
 
