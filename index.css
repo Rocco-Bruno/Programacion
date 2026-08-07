@@ -601,43 +601,51 @@ footer p{/*Derechos de autor*/
     background-color:#D1DBE6 ;
 }
 /* fin peril profesores*/
-
+/*INTRO/HERO*/
+#intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#intro div{
+    border-top: solid #1F2732;
+    border-bottom: solid #1F2732;
+    margin: 3rem;
+    min-height: 40vh;
+    padding: 5rem 8%;
+    transition: all 0.5s;
+}
+#intro div:hover{
+    border-top: solid #4F7091;
+    border-bottom: solid #4F7091;
+}
 #intro h1{
-    background-color: var(--texto-secundario);
-    width: 1000px;
-    height: 90px;
-    border-radius: 10px;
-    color: #d9dee2;
-    font-size: 70px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
+    font-size: 6.5vh;
+    font-weight: 10vh;
 }
-.intro-text{
-    text-align: left !important;/*alineado a la izquierda con prioridad*/
-    color: var(--texto-principal);/*Color de letra*/
-    font-size: 3rem;/*tamaño*/
-    margin: 1rem auto 1rem 1rem;
-    background-image: url("imagenes/prueba.webp");/*img de fondo*/
-    background-size: cover;/*ocupa todo el contenedor*/
-    border-radius: 10px;
+#intro p{
+    max-width: 600px;
 }
-.intro-link-año{
-    font-size: 1.2rem;/*tamaño letra*/
-    font-weight: 1;
-    margin: 0rem auto 1rem 3rem;
-    text-decoration: none;/*sin decoracion*/
-    color: var(--texto-principal);/*color de letra*/
-    transition: 0.5s;/*transicion*/
+#intro a{
+    color: #5B7AB5;
 }
-.intro-link-año:hover{
-    font-size: 1.4rem;/*tamaño letra*/
-    font-weight: 2;
-    text-decoration: underline;/*subrayado del anchor*/
-    text-decoration-color: var(--texto-principal);/*color del subrayado mas oscuro*/
-    color: var(--texto-principal);/*color mas oscuro*/
-    transition: all 0.5s ease;/*transicion limpia*/
+#intro a:hover{
+    color: #4F7091;
+    text-decoration-color: #4F7091;
 }
+#intro img{
+    border-left: solid 0.5rem #1F2732;
+    width: 500px;
+    margin-right: 3rem;
+    border-radius: 0% 15% 15% 0%;
+    transition: all ease 0.5s;
+}
+#intro img:hover{
+    border-left: solid 0.5rem #4F7091;
+    border-radius: 0% 12% 12% 0%;
+}
+
 
 
 
