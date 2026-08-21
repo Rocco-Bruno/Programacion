@@ -349,7 +349,7 @@ body{
     background-size: cover;/*ocupa todo el contenedor*/
 }
 #septimo{/*septimo año*/
-    background-image: url("imagenes/prueba.webp");/*img de fondo*/
+    background-image: url("imagenes/cursos/septimo.jpg");/*img de fondo*/
     background-size: cover;/*ocupa todo el contenedor*/
 }
 .año{/*año de los cursos*/
