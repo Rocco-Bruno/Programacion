@@ -106,7 +106,7 @@ body{
     font-size: 2rem;
 
     margin: 10px;
-
+    font-family: "Roboto Slab";/*fuente del titulo programación*/
     font-weight: bold;
     color: #1F2732;
 }
@@ -129,7 +129,7 @@ body{
     margin: 10px;
 
     font-size: large;
-
+    font-family: "Roboto Slab"; /*fuente de los links del nav*/
     transition: 0.2s;
 }
 .navegador nav ul li:hover{
