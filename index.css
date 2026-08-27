@@ -189,6 +189,7 @@ body{
     top: 30px;
     z-index: 1;
     opacity: 0;
+    transition: opacity 1s;
 }
 .articulo:hover i{
     opacity: 1;
