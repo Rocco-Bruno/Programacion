@@ -1,23 +1,23 @@
 :root {
   /* Fondos */
-  --fondo-principal: #F5F7FA;   /* Fondo principal de la página */
-  --fondo-tarjeta: #EAEEF4;     /* Fondos de tarjetas o secciones */
-  --fondo-oscuro: #1F2732;      /* Fondo oscuro, footer, modo oscuro */
+    --fondo-principal: #F5F7FA;   /* Fondo principal de la página */
+    --fondo-tarjeta: #EAEEF4;     /* Fondos de tarjetas o secciones */
+    --fondo-oscuro: #1F2732;      /* Fondo oscuro, footer, modo oscuro */
 
   /* Bordes */
-  --borde-suave: #D1DBE6;       /* Bordes suaves, separadores */
-  --borde-visible: #A9BDD0;     /* Bordes más visibles, estados deshabilitados */
+    --borde-suave: #D1DBE6;       /* Bordes suaves, separadores */
+    --borde-visible: #A9BDD0;     /* Bordes más visibles, estados deshabilitados */
 
   /* Textos e Iconos */
-  --texto-principal: #334659;   /* Texto principal sobre fondos claros */
-  --texto-secundario: #7B9AB5;  /* Texto secundario, iconos */
-  --texto-titulo: #2E3C4C;      /* Encabezados importantes */
-  --texto-destacado: #3A516A;   /* Elementos destacados, encabezados */
+    --texto-principal: #334659;   /* Texto principal sobre fondos claros */
+    --texto-secundario: #7B9AB5;  /* Texto secundario, iconos */
+    --texto-titulo: #2E3C4C;      /* Encabezados importantes */
+    --texto-destacado: #3A516A;   /* Elementos destacados, encabezados */
 
   /* Botones y Acciones */
-  --color-botones: #5B7AB5;     /* Color principal (Primary), botones */
-  --color-hover: #4F7091;       /* Hover de botones, enlaces activos */
-}/*varaibles de color, se usan con var(nombrecolor) en donde quieras que este*/
+    --color-botones: #5B7AB5;     /* Color principal (Primary), botones */
+    --color-hover: #4F7091;       /* Hover de botones, enlaces activos */
+}
 
 *{
     margin: 0;
@@ -28,7 +28,7 @@ html{
     scroll-behavior: smooth;/*para cuando el usuario toque un ancla y vaya a la misma página, vaya más suave*/
 }
 body{
-    background-color: #F5F7FA;/*Color de fondo de la página*/
+    background-color: var(--fondo-principal);/*Color de fondo de la página*/
     font-family: "Montserrat", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -110,7 +110,7 @@ body{
     margin: 10px;
     font-family: "Roboto Slab";/*fuente del titulo programación*/
     font-weight: bold;
-    color: #1F2732;
+    color: var(--fondo-oscuro);
 }
 
 .navegador nav ul{
@@ -140,7 +140,7 @@ body{
 .navegador nav ul li a{
     text-decoration: none;
     font-weight: 600;
-    color: #1F2732;
+    color: var(--fondo-oscuro);
 }
 .navegador nav ul li a:hover{
     color:var(--texto-principal);
@@ -209,7 +209,7 @@ body{
 }
 
 .razon{
-    background-color: #D1DBE6;
+    background-color: var(--borde-suave);
 
     display: inline-block;
 
@@ -236,7 +236,7 @@ body{
     border-radius: 10px;
 
     font-size: 2rem;
-    color: #2E3C4C;
+    color: var(--texto-titulo);
 
     transition: 0.2s;
 }
@@ -254,7 +254,7 @@ body{
 
     font-size: 1.5rem;
     font-weight: 400;
-    color: #1F2732;
+    color: var(--fondo-oscuro);
 }
 
 /*Quines somos*/
@@ -262,37 +262,37 @@ body{
     display: flex;
     padding: 50px;
     text-align: center;
-    background-color: #93c2ec4b;
+    background-color: #93C2EC4B;
     margin:50px;
     margin-top: 20px;
     border-radius: 20px;
      transition: 0.55s;
-     box-shadow: 0px 2px 7px 0px #3346593b;
+    box-shadow: 0px 2px 7px 0px #3346593B;
 }
 .quienessomos:hover{
      transform: scale(1.03);
-    background-color: #a6c5e29c;
+    background-color: #A6C5E29C;
     box-shadow: 0px 6px 7px 2px #33465965;
 }
 
 .Q-texto{
-     border: 1px solid #9cb3cce0;
+    border: 1px solid #9CB3CCE0;
     margin:25px;
     font-size: 23px;
     padding: 20px;
     width: 500px;/* Limitás el ancho para que no ocupe toda la pantalla */
     color: #00000085;
-    background-color: #8ca2b465;
+    background-color: #8CA2B465;
     border-radius: 10px;
-    box-shadow: 0px 2px 7px 0px #3346593b;
+    box-shadow: 0px 2px 7px 0px #3346593B;
     transition: 0.3s;
 }
 .Q-texto:hover{
-    border: 1px solid #728292;
+    border: 1px solid var(--color-botones);
     transform: scale(1.05);
     color: #000000bd;
-    background-color:#7b9ab59f; ;
-    box-shadow: 0px 7px 7px 0px #3346593b;
+    background-color: #7B9AB59F;
+    box-shadow: 0px 7px 7px 0px #3346593B;
 }
 .Q-texto strong{
     color: #000000c5;
@@ -373,8 +373,8 @@ body{
 }
 .link-año:hover{
     text-decoration: underline;/*subrayado del anchor*/
-    text-decoration-color: #5B7AB5;/*color del subrayado mas oscuro*/
-    color: #5B7AB5;/*color mas oscuro*/
+    text-decoration-color: var(--color-hover);/*color del subrayado mas oscuro*/
+    color: var(--color-hover);/*color mas oscuro*/
     transition: all 0.5s ease;/*transicion limpia*/
 }
 /*HORARIOS*/
@@ -391,8 +391,8 @@ body{
 }
 
 .horario-item {
-    background: linear-gradient(180deg, #EAEEF4 0%, #D1DBE6 100%);
-    border: 1px solid #A9BDD0;
+    background: linear-gradient(180deg, var(--fondo-tarjeta) 0%, var(--borde-suave) 100%);
+    border: 1px solid var(--borde-visible);
     border-radius: 18px;
     padding: 1rem;
     text-align: center;
@@ -458,7 +458,7 @@ body{
     transition: 0.3s;
 }
 .fa-file:hover, .fa-download:hover{
-    color: #5B7AB5 !important;/*color*/
+    color: var(--color-hover) !important;/*color*/
     transition: all 0.3s;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.01);/*Agranda el logo*/
 }
@@ -471,7 +471,7 @@ body{
     gap: 5rem;/*espaciado entre los 3 "silos"*/
 }
 footer{/*Footer en general*/
-    background-color: #1F2732;/*Color de fondo principal*/
+    background-color: var(--fondo-oscuro);/*Color de fondo principal*/
     color: var(--texto-secundario);/*Color de letra*/
 }
 footer nav{/*nav del footer (las redes)*/
@@ -507,7 +507,7 @@ footer a{/*links del footer*/
     transition: 0.15s;/*transicion*/
 }
 .fab:hover{/*hover de los iconos*/
-    color: #5B7AB5;/*color mas oscuro*/
+    color: var(--color-hover);/*color mas oscuro*/
     transition: all 0.15s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
     transform: scale(1.05);/*Agranda el logo*/
 }
@@ -554,11 +554,11 @@ footer p{/*Derechos de autor*/
   width: min(100%, 980px);
 }
 .perfprof{
-    border: 1px solid #9cb3cc;
+    border: 1px solid var(--borde-visible);
     align-items: center;
     padding: 25px;/*espacio entre el texto y el borde*/
     display: flex;
-    background-color: #D1DBE6;
+    background-color: var(--fondo-tarjeta);
     border-radius: 15px;
     max-width: 450px;         /* Limitás el ancho para que no ocupe toda la pantalla */
     width: 100%;
@@ -576,7 +576,7 @@ footer p{/*Derechos de autor*/
 }
 
 .fotopro {
-    border: 3px solid #9cb3cc;
+    border: 3px solid var(--borde-visible);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -600,7 +600,7 @@ footer p{/*Derechos de autor*/
 }
 
 .infoprof li{
-    background: #344557ad;
+    background: #344557AD;
     color: white;
     padding: 4px 8px;
     border-radius: 12px;
@@ -625,18 +625,18 @@ footer p{/*Derechos de autor*/
     margin-top: auto;
     align-self: center; 
     display: inline-block;
-    color: #b0c0d4;
+    color: var(--borde-suave);
     transition: 0.3s;
     padding: 7px;
-    background-color: #344557ad;
+    background-color: #344557AD;
     border-radius: 5px;
 }
 .infoprof a:hover{
     font-size: 1.0rem;
     font-weight: bold;
     transform: scale(1.05);
-    color: #7b8797;
-    background-color:#D1DBE6 ;
+    color: var(--color-hover);
+    background-color: var(--fondo-tarjeta);
 }
 /* fin peril profesores*/
 /*INTRO/HERO*/
@@ -683,13 +683,13 @@ footer p{/*Derechos de autor*/
 #intro a {
     margin-left: 1rem;
     text-decoration: none;
-    color: #A9BDD0;
+    color: var(--borde-visible);
     transition: 0.3s;
 }
 #intro a:hover {
     text-decoration: underline;
-    text-decoration-color: #EAEEF4;
-    color: #EAEEF4;
+    text-decoration-color: var(--fondo-tarjeta);
+    color: var(--fondo-tarjeta);
 }
 /*Logo para ir arriba de vuelta*/
 #flotante {
@@ -697,7 +697,7 @@ footer p{/*Derechos de autor*/
   bottom: 20px;       
   right: 20px;        
   z-index: 1000;      
-  background-color: #5B7AB5; 
+    background-color: var(--color-botones); 
   color: white;   
   border: none;
   border-radius: 50%; 
@@ -720,7 +720,7 @@ footer p{/*Derechos de autor*/
   transform: translateY(0);
 }
 #flotante:hover {
-  background-color: #4F7091;/*color mas oscuro*/
+    background-color: var(--color-hover);/*color mas oscuro*/
   transition: all 0.15s ease-in-out;/*Animación simple para que no sea tan brusco el cambio*/
   transform: scale(1.05);/*Agranda el logo*/
 }
