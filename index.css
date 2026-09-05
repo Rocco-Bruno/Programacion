@@ -441,37 +441,6 @@ body{
     font-size: 40px;
 }
 
-
-
-/*#horarios{
-    text-align: center;/*alineado al centro
-    color: var(--texto-principal);
-}
-#horarios article{
-    /*posiciones
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
-    /*medidas
-    height: 250px;
-    width: 250px;
-    padding: 25px;/*espacio entre el texto y el borde
-    border-radius: 15px;
-    margin: 2rem 2rem;
-    /*colores
-    background-color: #EAEEF4;
-    box-shadow: 0 8px 20px rgba(91,122,181,.28);
-    border: 4px solid #D1DBE6;
-    /*transicion
-    transition: 0.3s;
-}
-#horarios article:hover{
-    background-color: #EAEEF4;
-    box-shadow: 0 12px 28px rgba(91,122,181,.38);
-    border: 3px solid #D1DBE6;
-    transition: all 0.3s;/*Animación simple para que no sea tan brusco el cambio
-}*/
 .fa-file, .fa-download{
     /*posiciones*/
     display: inline-block;
