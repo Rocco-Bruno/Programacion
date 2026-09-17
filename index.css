@@ -58,7 +58,7 @@ body{
 
     background-color: var(--texto-principal);
 
-    border-radius: 16px;
+    border-radius: 18px;
 
     z-index: 1000;
     position: sticky;
@@ -75,7 +75,7 @@ body{
     display: flex;
     align-items: center;
 
-    border-radius: 14px;
+    border-radius: 16px;
 }
 
 .navegador nav div{
@@ -108,8 +108,7 @@ body{
     font-size: 2rem;
 
     margin: 10px;
-    font-family: "Roboto Slab";/*fuente del titulo programación*/
-    font-weight: bold;
+    font-weight:bolder;
     color: var(--fondo-oscuro);
 }
 
@@ -129,9 +128,7 @@ body{
     display: inline-block;
 
     margin: 10px;
-
     font-size: large;
-    font-family: "Roboto Slab"; /*fuente de los links del nav*/
     transition: 0.2s;
 }
 .navegador nav ul li:hover{
@@ -139,7 +136,7 @@ body{
 }
 .navegador nav ul li a{
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bolder;
     color: var(--fondo-oscuro);
 }
 .navegador nav ul li a:hover{
